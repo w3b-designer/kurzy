@@ -1,0 +1,312 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin,latin-ext);
+/* -----------------------------------------
+   Variables
+----------------------------------------- */
+/* -----------------------------------------
+   Fonts
+----------------------------------------- */
+/* -----------------------------------------
+   Colors
+----------------------------------------- */
+/* -----------------------------------------
+   Typography
+----------------------------------------- */
+/* -----------------------------------------
+   Spaces
+----------------------------------------- */
+/* -----------------------------------------
+   Styles
+----------------------------------------- */
+.bold {
+  font-weight: bold;
+}
+.relative {
+  position: relative;
+}
+.no-overflow {
+  overflow: hidden;
+}
+.clear {
+  clear: both;
+}
+.no-padding {
+  padding: 0;
+}
+.no-margin {
+  margin: 0;
+}
+.no-space {
+  padding: 0;
+  margin: 0;
+}
+.list-reset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.space-on-top {
+  padding-top: 15px;
+}
+.space-on-bottom {
+  padding-bottom: 15px;
+}
+.space-on-left {
+  padding-left: 15px;
+}
+.space-on-right {
+  padding-right: 15px;
+}
+.no-space-on-top {
+  padding-top: 0;
+}
+.no-space-on-bottom {
+  padding-bottom: 0;
+}
+.no-space-on-left {
+  padding-left: 0;
+}
+.no-space-on-right {
+  padding-right: 0;
+}
+.margin-on-top {
+  margin-top: 15px;
+}
+.margin-on-bottom {
+  margin-bottom: 15px;
+}
+.margin-on-left {
+  margin-left: 15px;
+}
+.margin-on-right {
+  margin-right: 15px;
+}
+/* -----------------------------------------
+   Mixins
+----------------------------------------- */
+/* GRADIENTS */
+/* -----------------------------------------
+   MAIN STYLES
+----------------------------------------- */
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  line-height: 140%;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+p,
+blockquote,
+th,
+td {
+  font-size: 14px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto Slab', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1.1;
+  color: inherit;
+}
+h1.normal,
+h2.normal,
+h3.normal,
+h4.normal,
+h5.normal,
+h6.normal {
+  font-weight: normal;
+}
+h1,
+h2,
+h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+h4,
+h5,
+h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+h1 {
+  font-size: 34px;
+}
+h2 {
+  font-size: 28px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 21px;
+}
+a {
+  color: #0061a1;
+  font-weight: normal;
+  text-decoration: none;
+}
+a:hover {
+  color: #005288;
+  text-decoration: underline;
+}
+a:visited,
+a:focus {
+  color: #008fee;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+ul,
+ol {
+  overflow: hidden;
+  padding-left: 30px;
+}
+ul.reset,
+ol.reset,
+ul.reset li,
+ol.reset li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.container {
+  position: relative;
+}
+/* -----------------------------------------
+   Buttons
+----------------------------------------- */
+.btn {
+  font-size: 14px;
+  -webkit-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  -khtml-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+}
+.btn-primary {
+  color: #ffffff;
+  background-color: #0061a1;
+  border: 1px solid #005288;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #006ab0 !important;
+  border: 1px solid #005288;
+}
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary:focus,
+.btn-primary:visited {
+  background: #0061a1;
+  border: 1px solid #004878 !important;
+  -webkit-box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.5);
+  -khtml-box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.5);
+  -moz-box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.5);
+}
+.btn-primary:visited {
+  color: #ffffff;
+}
+.btn-primary svg.icon {
+  fill: #ffffff;
+}
+/* -----------------------------------------
+   Lists
+----------------------------------------- */
+.list-title {
+  font-size: 17px;
+  margin: 0 0 10px;
+}
+.list-arrow {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 10px;
+}
+.list-arrow li {
+  padding-left: 20px;
+}
+/* -----------------------------------------
+   Header - navbar
+----------------------------------------- */
+.navbar {
+  height: auto;
+  margin: 0;
+  background-color: #0061a1;
+  overflow: hidden;
+  -webkit-border-radius: 0px;
+  -khtml-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+.navbar a {
+  color: #d4eeff;
+  font-size: 17px;
+  padding: 10px 20px  !important;
+}
+.navbar a:hover {
+  text-decoration: underline !important;
+  background: none !important;
+}
+.navbar-brand {
+  height: auto;
+  padding: 10px 15px;
+}
+.navbar-nav {
+  text-align: center;
+  margin: 8px auto 0;
+  float: none;
+}
+.navbar-nav li {
+  display: inline-block;
+  float: none;
+  border-right: 1px solid #004878;
+}
+.navbar-nav li:last-child {
+  border: none;
+}
+.navbar-right {
+  margin-top: 12px;
+}
+.navbar-right a {
+  font-size: 14px;
+}
+.navbar-right .btn {
+  color: #0061a1;
+  padding: 5px 15px !important;
+  background-color: #ffffff;
+  box-shadow: none;
+}
+/* -----------------------------------------
+   Container
+----------------------------------------- */
+.container-gray {
+  background-color: #f1f1f1;
+}
+/* -----------------------------------------
+   Homepage
+----------------------------------------- */
+h2 {
+  font-size: 27px;
+  font-weight: normal;
+  margin: 0 0 30p;
+}

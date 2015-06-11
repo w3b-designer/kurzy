@@ -1,0 +1,247 @@
+@import "development_mixins.less";
+
+
+/* -----------------------------------------
+   MAIN STYLES
+----------------------------------------- */
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+
+}
+
+html, body {
+	font-family: @primary-font;
+    line-height: 140%;
+}
+
+body, div, dl, dt, dd, ul, ol, li, pre, form, p, blockquote, th, td {
+	font-size: @font-size-base;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: @header-font;
+	font-weight: bold;
+	line-height: 1.1;
+	color: inherit;
+
+	&.normal {
+		font-weight: normal;
+	}
+}
+
+h1, h2, h3 {
+	margin-top: @space-base*2;
+	margin-bottom: @space-base;
+}
+h4, h5, h6 {
+	margin-top: @space-base;
+	margin-bottom: @space-base;
+}
+
+h1 {
+	font-size: @font-size-h1;
+}
+
+h2 {
+	font-size: @font-size-h2;
+}
+
+h3 {
+	font-size: @font-size-h3;
+}
+
+h4 {
+	font-size: @font-size-h4;
+}
+
+
+a {
+	color: @link-color;
+	font-weight: normal;
+	text-decoration: none;
+
+	&:hover {
+		color: darken(@link-color, 5%);
+		text-decoration: underline;
+	}
+
+	&:visited, &:focus {
+		color: lighten(@link-color, 15%);
+	}
+
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+ul, ol {
+	overflow: hidden;
+	padding-left: 30px;
+
+	&.reset, &.reset li {
+		.list-reset();
+	}
+}
+
+
+
+.container {
+	.relative();
+}
+
+
+
+
+
+/* -----------------------------------------
+   Buttons
+----------------------------------------- */
+.btn {
+	font-size: @font-size-base;
+	.border-radius(3px);
+	.inner-shadow(0,-1px,0,0.15);
+
+	&-primary {
+		color: @white;
+		background-color: @primary-color;
+		border: 1px solid darken(@primary-color, 5%);
+
+		&:hover {
+			color: #fff;
+			background-color:  lighten(@primary-color, 3%) !important;
+			border: 1px solid darken(@primary-color, 5%);
+
+		}
+
+		&:active, &.active, &:focus, &:visited {
+			background: @primary-color;
+		    border: 1px solid darken(@primary-color, 8%) !important;
+		  	.inner-shadow-white();
+		}
+
+		&:visited {
+			color: @white;
+		}
+
+	 	// Button with icon
+		svg.icon {
+			fill: @white;
+		}
+	}
+}
+
+
+
+
+
+
+/* -----------------------------------------
+   Lists
+----------------------------------------- */
+.list-title {
+	font-size: 17px;
+	margin: 0 0 10px;
+}
+
+.list-arrow {
+	.list-reset();
+	margin-bottom: 10px;
+
+	li {
+		padding-left: 20px;
+	}
+}
+
+
+
+
+/* -----------------------------------------
+   Header - navbar
+----------------------------------------- */
+.navbar {
+	height: auto;
+	margin: 0;
+	background-color: @primary-color;
+	overflow: hidden;
+	.border-radius(0px);
+
+	a {
+		color: lighten(@primary-color, 60%);
+		font-size: 17px;
+		padding: 10px 20px  !important;
+
+		&:hover {
+			text-decoration: underline !important;
+			background: none !important;
+		}
+	}
+
+	&-brand {
+		height: auto;
+		padding: 10px 15px
+	}
+
+	&-nav {
+		text-align: center;
+		margin: 8px auto 0;
+		float: none;
+
+		li {
+			display:inline-block;
+			float: none;
+			border-right: 1px solid darken(@primary-color, 8%);
+
+			&:last-child {
+				border: none;
+			}
+		}
+	}
+
+	&-right {
+		margin-top: 12px;
+
+		a {
+			font-size: @font-size-base;
+		}
+
+		.btn {
+			color: @primary-color;
+			padding: 5px 15px !important;
+			background-color: @white;
+			box-shadow: none;
+		}
+	}
+}
+
+
+
+
+/* -----------------------------------------
+   Container
+----------------------------------------- */
+.container {
+	&-gray {
+		background-color: @gray-light;
+	}
+}
+
+
+
+
+/* -----------------------------------------
+   Homepage
+----------------------------------------- */
+
+h2 {
+	font-size: 27px;
+	font-weight: normal;
+	margin: 0 0 30p;
+}
