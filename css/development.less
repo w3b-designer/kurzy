@@ -148,6 +148,7 @@ ul, ol {
 ----------------------------------------- */
 .list-title {
 	font-size: 17px;
+	font-family: @header-font;
 	margin: 0 0 10px;
 }
 
@@ -160,6 +161,11 @@ ul, ol {
 	}
 }
 
+.list-line-spaces {
+	li {
+		padding-bottom: 10px !important;
+	}
+}
 
 
 
@@ -169,7 +175,7 @@ ul, ol {
 .navbar {
 	height: auto;
 	margin: 0;
-	background-color: @primary-color;
+	background-color: @blue;
 	overflow: hidden;
 	.border-radius(0px);
 
@@ -229,7 +235,7 @@ ul, ol {
 ----------------------------------------- */
 .container {
 	&-gray {
-		background-color: @gray-light;
+		background-color: @gray-lighter;
 	}
 }
 
@@ -241,7 +247,19 @@ ul, ol {
 ----------------------------------------- */
 
 h2 {
-	font-size: 27px;
+	color: @gray-darker;
+	font-size: @font-size-h2;
 	font-weight: normal;
-	margin: 0 0 30p;
+	font-family: @primary-font;
+	margin: 30px 0 20px;
+}
+
+
+.premium-course-price {
+	color: @gray-dark;
+	font-size: @font-size-h2;
+	font-family: @header-font;
+	font-weight: bold;
+	text-align: right;
+	padding-top: 10px;
 }

@@ -16,8 +16,17 @@
    Spaces
 ----------------------------------------- */
 /* -----------------------------------------
-   Styles
+   Classes
 ----------------------------------------- */
+.font-size-large {
+  font-size: 18px;
+}
+.font-size-extra-large {
+  font-size: 28px;
+}
+.color-gray-dark {
+  color: #8e8e8e;
+}
 .bold {
   font-weight: bold;
 }
@@ -74,6 +83,9 @@
 }
 .margin-on-bottom {
   margin-bottom: 15px;
+}
+.double-margin-on-bottom {
+  margin-bottom: 30px;
 }
 .margin-on-left {
   margin-left: 15px;
@@ -156,17 +168,17 @@ h4 {
   font-size: 21px;
 }
 a {
-  color: #0061a1;
+  color: #1582d8;
   font-weight: normal;
   text-decoration: none;
 }
 a:hover {
-  color: #005288;
+  color: #1374c1;
   text-decoration: underline;
 }
 a:visited,
 a:focus {
-  color: #008fee;
+  color: #4ca6ee;
 }
 img {
   max-width: 100%;
@@ -204,20 +216,20 @@ ol.reset li {
 }
 .btn-primary {
   color: #ffffff;
-  background-color: #0061a1;
-  border: 1px solid #005288;
+  background-color: #1582d8;
+  border: 1px solid #1374c1;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #006ab0 !important;
-  border: 1px solid #005288;
+  background-color: #168ae6 !important;
+  border: 1px solid #1374c1;
 }
 .btn-primary:active,
 .btn-primary.active,
 .btn-primary:focus,
 .btn-primary:visited {
-  background: #0061a1;
-  border: 1px solid #004878 !important;
+  background: #1582d8;
+  border: 1px solid #116cb3 !important;
   -webkit-box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.5);
   -khtml-box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.5);
   -moz-box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.5);
@@ -234,6 +246,7 @@ ol.reset li {
 ----------------------------------------- */
 .list-title {
   font-size: 17px;
+  font-family: 'Roboto Slab', Helvetica, Arial, sans-serif;
   margin: 0 0 10px;
 }
 .list-arrow {
@@ -244,6 +257,9 @@ ol.reset li {
 }
 .list-arrow li {
   padding-left: 20px;
+}
+.list-line-spaces li {
+  padding-bottom: 10px !important;
 }
 /* -----------------------------------------
    Header - navbar
@@ -259,7 +275,7 @@ ol.reset li {
   border-radius: 0px;
 }
 .navbar a {
-  color: #d4eeff;
+  color: #ffffff;
   font-size: 17px;
   padding: 10px 20px  !important;
 }
@@ -279,7 +295,7 @@ ol.reset li {
 .navbar-nav li {
   display: inline-block;
   float: none;
-  border-right: 1px solid #004878;
+  border-right: 1px solid #116cb3;
 }
 .navbar-nav li:last-child {
   border: none;
@@ -291,7 +307,7 @@ ol.reset li {
   font-size: 14px;
 }
 .navbar-right .btn {
-  color: #0061a1;
+  color: #1582d8;
   padding: 5px 15px !important;
   background-color: #ffffff;
   box-shadow: none;
@@ -306,7 +322,17 @@ ol.reset li {
    Homepage
 ----------------------------------------- */
 h2 {
-  font-size: 27px;
+  color: #73787d;
+  font-size: 28px;
   font-weight: normal;
-  margin: 0 0 30p;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  margin: 30px 0 20px;
+}
+.premium-course-price {
+  color: #8e8e8e;
+  font-size: 28px;
+  font-family: 'Roboto Slab', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-align: right;
+  padding-top: 10px;
 }

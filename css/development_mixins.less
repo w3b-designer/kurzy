@@ -18,7 +18,7 @@
 /* -----------------------------------------
    Colors
 ----------------------------------------- */
-@primary-color: #0061a1;
+@primary-color: #1582d8;
 
 @white:         #ffffff;
 @black:         #000000;
@@ -32,9 +32,11 @@
 
 // GRAYS
 
-@gray-light:    #f1f1f1;
-@gray:          #d8dbdc;
-@gray-dark:     #a9a9a9;
+@gray-lighter:  #f1f1f1;
+@gray-light:    #d8dbdc;
+@gray:          #a9a9a9;
+@gray-dark:     #8e8e8e;
+@gray-darker:   #73787d;
 
 
 
@@ -65,8 +67,20 @@
 
 
 /* -----------------------------------------
-   Styles
+   Classes
 ----------------------------------------- */
+.font-size-large {
+    font-size: @font-size-large;
+}
+
+.font-size-extra-large {
+    font-size: @font-size-h2;
+}
+
+.color-gray-dark {
+    color: @gray-dark;
+}
+
 .bold {
     font-weight: bold;
 }
