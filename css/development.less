@@ -141,6 +141,28 @@ ul, ol {
 
 
 
+/* -----------------------------------------
+	Carousel
+----------------------------------------- */
+.carousel {
+	.carousel-indicators {
+		bottom: -20px;
+
+		li {
+			width: 12px;
+			height: 12px;
+			margin: 0 4px;
+			border-color: @gray-light;
+			border-width: 2px;
+
+			&.active {
+				background-color: @gray-light;
+			}
+		}
+	}
+}
+
+
 
 
 /* -----------------------------------------
@@ -157,7 +179,8 @@ ul, ol {
 	margin-bottom: 10px;
 
 	li {
-		padding-left: 20px;
+		padding-left: 15px;
+		background: url("../images/design/li.png") no-repeat 0 3px;
 	}
 }
 
@@ -262,4 +285,10 @@ h2 {
 	font-weight: bold;
 	text-align: right;
 	padding-top: 10px;
+}
+
+.logo-images {
+	img {
+		margin-bottom: @space-base*2;
+	}
 }

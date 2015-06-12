@@ -242,6 +242,22 @@ ol.reset li {
   fill: #ffffff;
 }
 /* -----------------------------------------
+	Carousel
+----------------------------------------- */
+.carousel .carousel-indicators {
+  bottom: -20px;
+}
+.carousel .carousel-indicators li {
+  width: 12px;
+  height: 12px;
+  margin: 0 4px;
+  border-color: #d8dbdc;
+  border-width: 2px;
+}
+.carousel .carousel-indicators li.active {
+  background-color: #d8dbdc;
+}
+/* -----------------------------------------
    Lists
 ----------------------------------------- */
 .list-title {
@@ -256,7 +272,8 @@ ol.reset li {
   margin-bottom: 10px;
 }
 .list-arrow li {
-  padding-left: 20px;
+  padding-left: 15px;
+  background: url("../images/design/li.png") no-repeat 0 3px;
 }
 .list-line-spaces li {
   padding-bottom: 10px !important;
@@ -335,4 +352,7 @@ h2 {
   font-weight: bold;
   text-align: right;
   padding-top: 10px;
+}
+.logo-images img {
+  margin-bottom: 30px;
 }
