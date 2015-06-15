@@ -16,6 +16,7 @@ body {
 html, body {
 	font-family: @primary-font;
     line-height: 140%;
+	background-color: #e4e4e4;
 }
 
 body, div, dl, dt, dd, ul, ol, li, pre, form, p, blockquote, th, td {
@@ -107,7 +108,7 @@ ul, ol {
 .btn {
 	font-size: @font-size-base;
 	.border-radius(3px);
-	.inner-shadow(0,-1px,0,0.15);
+
 
 	&-primary {
 		color: @white;
@@ -265,7 +266,7 @@ ul, ol {
 	}
 
 	&-right {
-		margin-top: 12px;
+		margin: 12px 0 0;
 
 		a {
 			font-size: @font-size-base;
@@ -286,6 +287,22 @@ ul, ol {
 
 
 
+/* -----------------------------------------
+   Subheader
+----------------------------------------- */
+.subheader {
+	color: @gray-dark;
+	padding: @space-base 0;
+	background-color: #eaeaea;
+
+	&-right {
+		padding-top: 7px;
+	}
+}
+
+
+
+
 
 /* -----------------------------------------
    Container
@@ -295,6 +312,50 @@ ul, ol {
 		background-color: @gray-lighter;
 	}
 }
+
+
+
+/* -----------------------------------------
+   Breadcrumbs
+----------------------------------------- */
+.breadcrumbs {
+	.list-reset();
+	margin: @space-base 0;
+
+	li {
+		color: @gray-darker;
+		float: left;
+
+		&::after {
+			content: "→";
+			padding: 0 8px;
+		}
+
+		&:last-child {
+			&::after {
+				content: "";
+			}
+		}
+	}
+}
+
+
+
+/* -----------------------------------------
+   Content
+----------------------------------------- */
+.panel-content {
+	background-color: @white;
+}
+
+
+
+
+
+/* -----------------------------------------
+   Sidebars
+----------------------------------------- */
+
 
 
 
@@ -348,10 +409,7 @@ h2 {
    Search
 ----------------------------------------- */
 .complex-search {
-	border: 10px solid #1d343c;
-	margin: 0 -10px @space-base/2;
 	position: relative;
-	.border-radius(15px);
 
 	.btn-group {
 		position: absolute;
@@ -373,5 +431,12 @@ h2 {
 		&:hover {
 			background-color:  lighten(@green, 3%) !important;
 		}
+	}
+
+
+	.homepage & {
+		border: 10px solid #1d343c;
+		margin: 0 -10px @space-base/2;
+		.border-radius(15px);
 	}
 }

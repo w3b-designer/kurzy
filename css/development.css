@@ -113,6 +113,7 @@ html,
 body {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   line-height: 140%;
+  background-color: #e4e4e4;
 }
 body,
 div,
@@ -215,10 +216,6 @@ ol.reset li {
   -khtml-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
-  -khtml-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
-  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
 }
 .btn-primary {
   color: #ffffff;
@@ -343,7 +340,7 @@ ol.reset li {
   border: none;
 }
 .navbar-right {
-  margin-top: 12px;
+  margin: 12px 0 0;
 }
 .navbar-right a {
   font-size: 14px;
@@ -358,11 +355,51 @@ ol.reset li {
   background-color: #ededed !important;
 }
 /* -----------------------------------------
+   Subheader
+----------------------------------------- */
+.subheader {
+  color: #8e8e8e;
+  padding: 15px 0;
+  background-color: #eaeaea;
+}
+.subheader-right {
+  padding-top: 7px;
+}
+/* -----------------------------------------
    Container
 ----------------------------------------- */
 .container-gray {
   background-color: #f1f1f1;
 }
+/* -----------------------------------------
+   Breadcrumbs
+----------------------------------------- */
+.breadcrumbs {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin: 15px 0;
+}
+.breadcrumbs li {
+  color: #73787d;
+  float: left;
+}
+.breadcrumbs li::after {
+  content: "→";
+  padding: 0 8px;
+}
+.breadcrumbs li:last-child::after {
+  content: "";
+}
+/* -----------------------------------------
+   Content
+----------------------------------------- */
+.panel-content {
+  background-color: #ffffff;
+}
+/* -----------------------------------------
+   Sidebars
+----------------------------------------- */
 /* -----------------------------------------
    Homepage
 ----------------------------------------- */
@@ -400,13 +437,7 @@ h2 {
    Search
 ----------------------------------------- */
 .complex-search {
-  border: 10px solid #1d343c;
-  margin: 0 -10px 7.5px;
   position: relative;
-  -webkit-border-radius: 15px;
-  -khtml-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
 }
 .complex-search .btn-group {
   position: absolute;
@@ -425,4 +456,12 @@ h2 {
 }
 .complex-search .btn-search:hover {
   background-color: #00b064 !important;
+}
+.homepage .complex-search {
+  border: 10px solid #1d343c;
+  margin: 0 -10px 7.5px;
+  -webkit-border-radius: 15px;
+  -khtml-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
 }
