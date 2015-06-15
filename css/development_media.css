@@ -1,0 +1,133 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin,latin-ext);
+/* -----------------------------------------
+   Variables
+----------------------------------------- */
+/* -----------------------------------------
+   Fonts
+----------------------------------------- */
+/* -----------------------------------------
+   Colors
+----------------------------------------- */
+/* -----------------------------------------
+   Typography
+----------------------------------------- */
+/* -----------------------------------------
+   Spaces
+----------------------------------------- */
+/* -----------------------------------------
+   Classes
+----------------------------------------- */
+.font-size-large {
+  font-size: 17px;
+}
+.font-size-extra-large {
+  font-size: 28px;
+}
+.color-gray-dark {
+  color: #8e8e8e;
+}
+.bold {
+  font-weight: bold;
+}
+.relative {
+  position: relative;
+}
+.no-overflow {
+  overflow: hidden;
+}
+.inline-block {
+  display: inline-block;
+}
+.clear {
+  clear: both;
+}
+.no-padding {
+  padding: 0;
+}
+.no-margin {
+  margin: 0;
+}
+.no-space {
+  padding: 0;
+  margin: 0;
+}
+.list-reset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.space-on-top {
+  padding-top: 15px;
+}
+.space-on-bottom {
+  padding-bottom: 15px;
+}
+.space-on-left {
+  padding-left: 15px;
+}
+.space-on-right {
+  padding-right: 15px;
+}
+.no-space-on-top {
+  padding-top: 0;
+}
+.no-space-on-bottom {
+  padding-bottom: 0;
+}
+.no-space-on-left {
+  padding-left: 0;
+}
+.no-space-on-right {
+  padding-right: 0;
+}
+.margin-on-top {
+  margin-top: 15px;
+}
+.double-margin-on-top {
+  margin-top: 30px;
+}
+.margin-on-bottom {
+  margin-bottom: 15px;
+}
+.double-margin-on-bottom {
+  margin-bottom: 30px;
+}
+.margin-on-left {
+  margin-left: 15px;
+}
+.margin-on-right {
+  margin-right: 15px;
+}
+/* -----------------------------------------
+   Mixins
+----------------------------------------- */
+/* GRADIENTS */
+@media (min-width: 768px) {
+  /* -----------------------------------------
+       Lists
+    ----------------------------------------- */
+  .list-arrow {
+    margin-bottom: 10px;
+  }
+  /* -----------------------------------------
+       Header - navbar
+    ----------------------------------------- */
+  .navbar-nav {
+    text-align: center;
+    margin: 8px auto 0;
+  }
+  .navbar-nav li {
+    display: inline-block;
+    border-right: 1px solid #116cb3;
+  }
+  .navbar-nav li:last-child {
+    border: none;
+  }
+  /* -----------------------------------------
+       Homepage
+    ----------------------------------------- */
+  .premium-course-price {
+    text-align: right;
+  }
+}

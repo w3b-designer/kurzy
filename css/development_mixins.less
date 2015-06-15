@@ -55,7 +55,7 @@
 @font-size-h3:  floor(@font-size-base * 1.75); // ~xx px
 @font-size-h4:  ceil(@font-size-base * 1.5); // ~xx px
 
-@font-size-large:  ceil((@font-size-base * 1.25)); // ~xx px
+@font-size-large:  ceil((@font-size-base * 1.20)); // ~xx px
 @font-size-small:  ceil((@font-size-base * 0.85)); // ~xx px
 
 
@@ -91,6 +91,10 @@
 
 .no-overflow {
     overflow: hidden;
+}
+
+.inline-block {
+    display: inline-block;
 }
 
 .clear {
@@ -148,6 +152,10 @@
 
 .margin-on-top {
   margin-top: @space-base;
+}
+
+.double-margin-on-top {
+    margin-top: @space-base * 2;
 }
 
 .margin-on-bottom {
@@ -370,3 +378,27 @@
   -o-transform-origin:      @x @y;
   transform-origin:         @x @y;
 }
+
+
+
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+@screen-xs-min:               480px;
+
+// Small screen / tablet
+@screen-sm-min:               768px;
+
+// Medium screen / desktop
+@screen-md-min:               992px;
+
+// Large screen / wide desktop
+@screen-lg-min:               1200px;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:               (@screen-sm-min - 1);
+@screen-sm-max:               (@screen-md-min - 1);
+@screen-md-max:               (@screen-lg-min - 1);

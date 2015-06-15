@@ -19,7 +19,7 @@
    Classes
 ----------------------------------------- */
 .font-size-large {
-  font-size: 18px;
+  font-size: 17px;
 }
 .font-size-extra-large {
   font-size: 28px;
@@ -35,6 +35,9 @@
 }
 .no-overflow {
   overflow: hidden;
+}
+.inline-block {
+  display: inline-block;
 }
 .clear {
   clear: both;
@@ -80,6 +83,9 @@
 }
 .margin-on-top {
   margin-top: 15px;
+}
+.double-margin-on-top {
+  margin-top: 30px;
 }
 .margin-on-bottom {
   margin-bottom: 15px;
@@ -244,8 +250,11 @@ ol.reset li {
 /* -----------------------------------------
 	Carousel
 ----------------------------------------- */
+.carousel {
+  padding-bottom: 30px;
+}
 .carousel .carousel-indicators {
-  bottom: -20px;
+  bottom: -15px;
 }
 .carousel .carousel-indicators li {
   width: 12px;
@@ -256,6 +265,22 @@ ol.reset li {
 }
 .carousel .carousel-indicators li.active {
   background-color: #d8dbdc;
+}
+.carousel .carousel-indicators.black-indicators li {
+  border-color: #2a2e34;
+}
+.carousel .carousel-indicators.black-indicators li.active {
+  background-color: #2a2e34;
+}
+.carousel-company-presentation .item {
+  padding: 10px;
+  background-color: #ffffff;
+}
+.carousel-company-presentation .item .company-image {
+  margin: 10px -10px;
+}
+.carousel.logo-images .item .row:first-child {
+  margin-bottom: 30px;
 }
 /* -----------------------------------------
    Lists
@@ -269,7 +294,6 @@ ol.reset li {
   padding: 0;
   margin: 0;
   list-style: none;
-  margin-bottom: 10px;
 }
 .list-arrow li {
   padding-left: 15px;
@@ -291,6 +315,9 @@ ol.reset li {
   -moz-border-radius: 0px;
   border-radius: 0px;
 }
+.navbar-collapse {
+  padding: 0;
+}
 .navbar a {
   color: #ffffff;
   font-size: 17px;
@@ -305,14 +332,12 @@ ol.reset li {
   padding: 10px 15px;
 }
 .navbar-nav {
-  text-align: center;
   margin: 8px auto 0;
   float: none;
 }
 .navbar-nav li {
-  display: inline-block;
   float: none;
-  border-right: 1px solid #116cb3;
+  border-bottom: 1px solid #2b96ea;
 }
 .navbar-nav li:last-child {
   border: none;
@@ -329,6 +354,9 @@ ol.reset li {
   background-color: #ffffff;
   box-shadow: none;
 }
+.navbar-right .btn:hover {
+  background-color: #ededed !important;
+}
 /* -----------------------------------------
    Container
 ----------------------------------------- */
@@ -338,6 +366,19 @@ ol.reset li {
 /* -----------------------------------------
    Homepage
 ----------------------------------------- */
+.hp-search {
+  padding: 70px 0 60px;
+}
+.hp-search-title {
+  color: #ffffff;
+  font-size: 21px;
+  font-family: 'Roboto Slab', Helvetica, Arial, sans-serif;
+  line-height: 140%;
+  margin-bottom: 15px;
+}
+.hp-search a {
+  color: #ffffff;
+}
 h2 {
   color: #73787d;
   font-size: 28px;
@@ -350,9 +391,38 @@ h2 {
   font-size: 28px;
   font-family: 'Roboto Slab', Helvetica, Arial, sans-serif;
   font-weight: bold;
-  text-align: right;
   padding-top: 10px;
 }
-.logo-images img {
+.logo-list img {
   margin-bottom: 30px;
+}
+/* -----------------------------------------
+   Search
+----------------------------------------- */
+.complex-search {
+  border: 10px solid #1d343c;
+  margin: 0 -10px 7.5px;
+  position: relative;
+  -webkit-border-radius: 15px;
+  -khtml-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+.complex-search .btn-group {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.complex-search .btn-group button {
+  font-size: 17px;
+  height: 46px;
+  box-shadow: none;
+}
+.complex-search .btn-search {
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #00a15b;
+}
+.complex-search .btn-search:hover {
+  background-color: #00b064 !important;
 }

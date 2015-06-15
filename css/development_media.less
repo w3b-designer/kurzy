@@ -1,0 +1,66 @@
+@import "development_mixins.less";
+
+
+// xs - min-width: 480px
+// phone
+@media (min-width: @screen-xs-min) {
+
+}
+
+
+
+// sm - min-width: 768px
+// tablet
+@media (min-width: @screen-sm-min) {
+
+
+    /* -----------------------------------------
+       Lists
+    ----------------------------------------- */
+    .list-arrow {
+    	margin-bottom: 10px;
+    }
+
+
+    /* -----------------------------------------
+       Header - navbar
+    ----------------------------------------- */
+    .navbar {
+        &-nav {
+    		text-align: center;
+    		margin: 8px auto 0;
+
+    		li {
+    			display:inline-block;
+    			border-right: 1px solid darken(@primary-color, 8%);
+
+    			&:last-child {
+    				border: none;
+    			}
+    		}
+    	}
+    }
+
+
+
+    /* -----------------------------------------
+       Homepage
+    ----------------------------------------- */
+    .premium-course-price {
+    	text-align: right;
+    }
+}
+
+
+// md - min-width: 992px
+// desktop
+@media (min-width: @screen-md-min) {
+
+}
+
+
+// lg - min-width: 1200px
+// wide desktop
+@media (min-width: @screen-lg-min) {
+
+}
