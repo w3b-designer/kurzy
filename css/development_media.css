@@ -120,6 +120,7 @@
   .navbar-nav li {
     display: inline-block;
     border-right: 1px solid #116cb3;
+    border-bottom: none;
   }
   .navbar-nav li:last-child {
     border: none;
