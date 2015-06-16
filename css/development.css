@@ -400,6 +400,49 @@ ol.reset li {
 /* -----------------------------------------
    Sidebars
 ----------------------------------------- */
+.sidebar-left {
+  padding: 15px;
+  background-color: #f1f1f1;
+  border-right: 1px solid #d8dbdc;
+}
+.sidebar-left li {
+  margin-bottom: 5px;
+}
+.sidebar-left .sidebar-title {
+  font-family: 'Roboto Slab', Helvetica, Arial, sans-serif;
+  margin: 20px 0 5px;
+}
+.sidebar-left .sidebar-title:first-child {
+  margin-top: 0;
+}
+.sidebar-left .sidebar-criteria {
+  padding-bottom: 20px;
+  position: relative;
+  overflow: auto;
+}
+.sidebar-left .sidebar-criteria::after {
+  content: "";
+  border-bottom: 1px solid #d8dbdc;
+  position: absolute;
+  left: -15px;
+  right: -15px;
+  bottom: 0;
+}
+.sidebar-left .sidebar-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.sidebar-left .sidebar-list a {
+  display: block;
+}
+.sidebar-left .sidebar-list a.more {
+  display: inline;
+}
+.sidebar-left .sidebar-list span {
+  color: #a9a9a9;
+  float: right;
+}
 /* -----------------------------------------
    Homepage
 ----------------------------------------- */

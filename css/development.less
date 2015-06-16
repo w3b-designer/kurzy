@@ -355,7 +355,56 @@ ul, ol {
 /* -----------------------------------------
    Sidebars
 ----------------------------------------- */
+.sidebar-left {
+	padding: @space-base;
+	background-color: @gray-lighter;
+	border-right: 1px solid @gray-light;
 
+	li {
+		margin-bottom: 5px;
+	}
+
+	.sidebar-title {
+		font-family: @header-font;
+		margin: 20px 0 5px;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	.sidebar-criteria {
+		padding-bottom: 20px;
+		position: relative;
+		overflow: auto;
+
+		&::after {
+			content: "";
+			border-bottom: 1px solid @gray-light;
+			position: absolute;
+			left: -@space-base;
+			right: -@space-base;
+			bottom: 0;
+		}
+	}
+
+	.sidebar-list {
+		.list-reset();
+
+		a {
+			display: block;
+
+			&.more {
+				display: inline;
+			}
+		}
+
+		span {
+			color: @gray;
+			float: right;
+		}
+	}
+}
 
 
 
