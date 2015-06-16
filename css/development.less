@@ -46,6 +46,16 @@ h4, h5, h6 {
 
 h1 {
 	font-size: @font-size-h1;
+
+	.list & {
+		color: @text-color;
+		font-size: @font-size-h4;
+		margin-top: @space-base;
+
+		span {
+			font-weight: normal;
+		}
+	}
 }
 
 h2 {

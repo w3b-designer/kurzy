@@ -165,6 +165,14 @@ h6 {
 h1 {
   font-size: 34px;
 }
+.list h1 {
+  color: #444444;
+  font-size: 21px;
+  margin-top: 15px;
+}
+.list h1 span {
+  font-weight: normal;
+}
 h2 {
   font-size: 28px;
 }
