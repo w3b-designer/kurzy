@@ -134,6 +134,11 @@
   padding-right: @space-base;
 }
 
+.space-on-sides {
+    .space-on-left();
+    .space-on-right();
+}
+
 .no-space-on-top {
   padding-top: 0;
 }
@@ -193,11 +198,11 @@
 }
 
 
-.box-shadow(@x: 3px, @y: 3px, @blur: 3px, @alpha: 0.1) {
-    -webkit-box-shadow: rgba(0,0,0, @opacity) @pixel1 @pixel2 @pixel3;
-     -khtml-box-shadow: rgba(0,0,0, @opacity) @pixel1 @pixel2 @pixel3;
-       -moz-box-shadow: rgba(0,0,0, @opacity) @pixel1 @pixel2 @pixel3;
-            box-shadow: rgba(0,0,0, @opacity) @pixel1 @pixel2 @pixel3;
+.box-shadow(@x: 3px, @y: 3px, @blur: 3px, @opacity: 0.1) {
+    -webkit-box-shadow: rgba(0,0,0, @opacity) @x @y @blur;
+     -khtml-box-shadow: rgba(0,0,0, @opacity) @x @y @blur;
+       -moz-box-shadow: rgba(0,0,0, @opacity) @x @y @blur;
+            box-shadow: rgba(0,0,0, @opacity) @x @y @blur;
   	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color=@gray-dark);
 }
 

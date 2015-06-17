@@ -10,7 +10,7 @@ html {
 }
 
 body {
-
+	padding-bottom: 4*@space-base;
 }
 
 html, body {
@@ -200,6 +200,12 @@ ul, ol {
 			margin-bottom: @space-base*2;
 		}
 	}
+
+	.sidebar-right & {
+		.carousel-indicators {
+			bottom: -5px;
+		}
+	}
 }
 
 
@@ -323,6 +329,11 @@ ul, ol {
 	}
 }
 
+.panel-container {
+	background-color: @white;
+	.box-shadow(0px, 0px, 5px, .15);
+}
+
 
 
 /* -----------------------------------------
@@ -355,7 +366,35 @@ ul, ol {
    Content
 ----------------------------------------- */
 .panel-content {
-	background-color: @white;
+	padding-right: 2*@space-base;
+}
+
+
+
+
+
+
+/* -----------------------------------------
+   Offer List
+----------------------------------------- */
+.offer-list {
+	.list-reset();
+	margin-bottom: 4*@space-base;
+	border-top: 1px solid @gray;
+
+	li {
+		padding: @space-base 0;
+		border-bottom: 1px solid @gray-light;
+	}
+
+	h2 {
+		font-size: @font-size-large;
+		margin: 0 0 5px;
+
+		a {
+			.bold();
+		}
+	}
 }
 
 
@@ -414,8 +453,39 @@ ul, ol {
 			float: right;
 		}
 	}
+
+	.sidebar-doubleform {
+		label {
+			color: @gray;
+			font-weight: normal;
+		}
+
+		input {
+			width: 73%;
+			padding: 5px;
+			margin-left: 5px;
+		}
+	}
 }
 
+
+.sidebar-right {
+	.sidebar-item {
+		padding: @space-base 0;
+	}
+
+	.sidebar-white {
+		background-color: @white;
+	}
+
+	.sidebar-title {
+		font-family: @header-font;
+		font-size: @font-size-large;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+		border-bottom: 1px solid @gray-light;
+	}
+}
 
 
 
@@ -448,11 +518,12 @@ h2 {
 }
 
 
-.premium-course-price {
+.offer-price {
 	color: @gray-dark;
 	font-size: @font-size-h2;
 	font-family: @header-font;
 	font-weight: bold;
+	text-align: right;
 	padding-top: 10px;
 }
 

@@ -69,6 +69,10 @@
 .space-on-right {
   padding-right: 15px;
 }
+.space-on-sides {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .no-space-on-top {
   padding-top: 0;
 }
@@ -108,6 +112,9 @@
 ----------------------------------------- */
 html {
   font-size: 62.5%;
+}
+body {
+  padding-bottom: 60px;
 }
 html,
 body {
@@ -287,6 +294,9 @@ ol.reset li {
 .carousel.logo-images .item .row:first-child {
   margin-bottom: 30px;
 }
+.sidebar-right .carousel .carousel-indicators {
+  bottom: -5px;
+}
 /* -----------------------------------------
    Lists
 ----------------------------------------- */
@@ -379,6 +389,14 @@ ol.reset li {
 .container-gray {
   background-color: #f1f1f1;
 }
+.panel-container {
+  background-color: #ffffff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 5px;
+  -khtml-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 5px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color=#8e8e8e);
+}
 /* -----------------------------------------
    Breadcrumbs
 ----------------------------------------- */
@@ -403,7 +421,28 @@ ol.reset li {
    Content
 ----------------------------------------- */
 .panel-content {
-  background-color: #ffffff;
+  padding-right: 30px;
+}
+/* -----------------------------------------
+   Offer List
+----------------------------------------- */
+.offer-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 60px;
+  border-top: 1px solid #a9a9a9;
+}
+.offer-list li {
+  padding: 15px 0;
+  border-bottom: 1px solid #d8dbdc;
+}
+.offer-list h2 {
+  font-size: 17px;
+  margin: 0 0 5px;
+}
+.offer-list h2 a {
+  font-weight: bold;
 }
 /* -----------------------------------------
    Sidebars
@@ -451,6 +490,28 @@ ol.reset li {
   color: #a9a9a9;
   float: right;
 }
+.sidebar-left .sidebar-doubleform label {
+  color: #a9a9a9;
+  font-weight: normal;
+}
+.sidebar-left .sidebar-doubleform input {
+  width: 73%;
+  padding: 5px;
+  margin-left: 5px;
+}
+.sidebar-right .sidebar-item {
+  padding: 15px 0;
+}
+.sidebar-right .sidebar-white {
+  background-color: #ffffff;
+}
+.sidebar-right .sidebar-title {
+  font-family: 'Roboto Slab', Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #d8dbdc;
+}
 /* -----------------------------------------
    Homepage
 ----------------------------------------- */
@@ -474,11 +535,12 @@ h2 {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   margin: 30px 0 20px;
 }
-.premium-course-price {
+.offer-price {
   color: #8e8e8e;
   font-size: 28px;
   font-family: 'Roboto Slab', Helvetica, Arial, sans-serif;
   font-weight: bold;
+  text-align: right;
   padding-top: 10px;
 }
 .logo-list img {

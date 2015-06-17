@@ -69,6 +69,10 @@
 .space-on-right {
   padding-right: 15px;
 }
+.space-on-sides {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .no-space-on-top {
   padding-top: 0;
 }
