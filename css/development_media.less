@@ -45,6 +45,43 @@
 
 
     /* -----------------------------------------
+       Content
+    ----------------------------------------- */
+    .panel-content {
+    	padding: 0 2*@space-base 0 0;
+    }
+
+
+
+    /* -----------------------------------------
+       Sidebars
+    ----------------------------------------- */
+    .sidebar-left {
+
+        .panel {
+            background: none;
+            border: none;
+            box-shadow: none;
+
+            &-heading {
+                display: none;
+            }
+
+            &-collapse {
+                display: block;
+                visibility: visible;
+            }
+
+            &-body {
+                padding: 0;
+                border: none !important;
+            }
+        }
+    }
+
+
+
+    /* -----------------------------------------
        Homepage
     ----------------------------------------- */
     .premium-course-price {

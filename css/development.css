@@ -331,7 +331,7 @@ ol.reset li {
   border-radius: 0px;
 }
 .navbar-collapse {
-  padding: 0;
+  padding: 0 0 10px;
 }
 .navbar a {
   color: #ffffff;
@@ -345,6 +345,7 @@ ol.reset li {
 .navbar-brand {
   height: auto;
   padding: 10px 15px;
+  margin-left: -15px;
 }
 .navbar-nav {
   margin: 8px auto 0;
@@ -372,6 +373,13 @@ ol.reset li {
 .navbar-right .btn:hover {
   background-color: #ededed !important;
 }
+.navbar-toggle {
+  margin: 11px 0 0;
+  background-color: #ffffff;
+}
+.navbar-toggle .icon-bar {
+  background-color: #a9a9a9;
+}
 /* -----------------------------------------
    Subheader
 ----------------------------------------- */
@@ -390,6 +398,7 @@ ol.reset li {
   background-color: #f1f1f1;
 }
 .panel-container {
+  margin-bottom: 45px;
   background-color: #ffffff;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 5px;
   -khtml-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 5px;
@@ -421,7 +430,8 @@ ol.reset li {
    Content
 ----------------------------------------- */
 .panel-content {
-  padding-right: 30px;
+  padding: 0 15px;
+  overflow: hidden;
 }
 /* -----------------------------------------
    Offer List
@@ -455,6 +465,16 @@ ol.reset li {
 .sidebar-left li {
   margin-bottom: 5px;
 }
+.sidebar-left .panel-heading {
+  padding: 0;
+}
+.sidebar-left .panel-heading a {
+  padding: 10px 15px;
+  display: block;
+}
+.sidebar-left .panel-group {
+  margin-bottom: 0;
+}
 .sidebar-left .sidebar-title {
   font-family: 'Roboto Slab', Helvetica, Arial, sans-serif;
   margin: 20px 0 5px;
@@ -463,17 +483,23 @@ ol.reset li {
   margin-top: 0;
 }
 .sidebar-left .sidebar-criteria {
-  padding-bottom: 20px;
   position: relative;
   overflow: auto;
 }
 .sidebar-left .sidebar-criteria::after {
   content: "";
-  border-bottom: 1px solid #d8dbdc;
-  position: absolute;
-  left: -15px;
-  right: -15px;
-  bottom: 0;
+  width: 100%;
+  height: 1px;
+  margin-top: 20px;
+  display: block;
+  background-color: #d8dbdc;
+}
+.sidebar-left .sidebar-criteria li::before {
+  content: "";
+  width: 10px;
+  height: 15px;
+  background: url("../images/icons/ico_cross.png") no-repeat 0 4px;
+  float: right;
 }
 .sidebar-left .sidebar-list {
   padding: 0;
@@ -497,7 +523,8 @@ ol.reset li {
 .sidebar-left .sidebar-doubleform input {
   width: 73%;
   padding: 5px;
-  margin-left: 5px;
+  margin: 0 0 5px 5px;
+  display: inline;
 }
 .sidebar-right .sidebar-item {
   padding: 15px 0;
@@ -511,6 +538,17 @@ ol.reset li {
   padding-bottom: 10px;
   margin-bottom: 10px;
   border-bottom: 1px solid #d8dbdc;
+}
+.sidebar-right .sidebar-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.sidebar-right .sidebar-list li {
+  margin-bottom: 8px;
+}
+.sidebar-right .sidebar-list a {
+  font-weight: bold;
 }
 /* -----------------------------------------
    Homepage
@@ -563,12 +601,12 @@ h2 {
   box-shadow: none;
 }
 .complex-search .btn-search {
-  color: #ffffff;
+  color: #444444;
   font-weight: bold;
-  background-color: #00a15b;
+  background-color: #bec0c0;
 }
 .complex-search .btn-search:hover {
-  background-color: #00b064 !important;
+  background-color: #c6c8c8 !important;
 }
 .homepage .complex-search {
   border: 10px solid #1d343c;
@@ -577,4 +615,11 @@ h2 {
   -khtml-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
+}
+.homepage .complex-search .btn-search {
+  color: #ffffff;
+  background-color: #00a15b;
+}
+.homepage .complex-search .btn-search:hover {
+  background-color: #00b064 !important;
 }

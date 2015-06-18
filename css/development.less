@@ -248,7 +248,7 @@ ul, ol {
 	.border-radius(0px);
 
 	&-collapse {
-		padding: 0;
+		padding: 0 0 10px;
 	}
 
 	a {
@@ -264,7 +264,8 @@ ul, ol {
 
 	&-brand {
 		height: auto;
-		padding: 10px 15px
+		padding: 10px @space-base;
+		margin-left: -@space-base;
 	}
 
 	&-nav {
@@ -299,6 +300,15 @@ ul, ol {
 			}
 		}
 	}
+
+	&-toggle {
+		margin: 11px 0 0;
+		background-color: @white;
+
+		.icon-bar {
+			background-color: @gray;
+		}
+	}
 }
 
 
@@ -330,6 +340,7 @@ ul, ol {
 }
 
 .panel-container {
+	margin-bottom: 3*@space-base;
 	background-color: @white;
 	.box-shadow(0px, 0px, 5px, .15);
 }
@@ -366,7 +377,8 @@ ul, ol {
    Content
 ----------------------------------------- */
 .panel-content {
-	padding-right: 2*@space-base;
+	padding: 0 @space-base;
+	overflow: hidden;
 }
 
 
@@ -413,6 +425,21 @@ ul, ol {
 		margin-bottom: 5px;
 	}
 
+	.panel {
+		&-heading {
+			padding: 0;
+
+			a {
+				padding: 10px @space-base;
+				display: block;
+			}
+		}
+
+		&-group {
+			margin-bottom: 0;
+		}
+	}
+
 	.sidebar-title {
 		font-family: @header-font;
 		margin: 20px 0 5px;
@@ -423,17 +450,26 @@ ul, ol {
 	}
 
 	.sidebar-criteria {
-		padding-bottom: 20px;
 		position: relative;
 		overflow: auto;
 
 		&::after {
 			content: "";
-			border-bottom: 1px solid @gray-light;
-			position: absolute;
-			left: -@space-base;
-			right: -@space-base;
-			bottom: 0;
+			width: 100%;
+			height: 1px;
+			margin-top: 20px;
+			display: block;
+			background-color: @gray-light;
+		}
+
+		li {
+			&::before {
+				content: "";
+				width: 10px;
+				height: 15px;
+				background: url("../images/icons/ico_cross.png") no-repeat 0 4px;
+				float: right;
+			}
 		}
 	}
 
@@ -463,7 +499,8 @@ ul, ol {
 		input {
 			width: 73%;
 			padding: 5px;
-			margin-left: 5px;
+			margin: 0 0 5px 5px;
+			display: inline;
 		}
 	}
 }
@@ -484,6 +521,18 @@ ul, ol {
 		padding-bottom: 10px;
 		margin-bottom: 10px;
 		border-bottom: 1px solid @gray-light;
+	}
+
+	.sidebar-list {
+		.list-reset();
+
+		li {
+			margin-bottom: 8px;
+		}
+
+		a {
+			.bold();
+		}
 	}
 }
 
@@ -554,12 +603,12 @@ h2 {
 	}
 
 	.btn-search {
-		color: @white;
+		color: @text-color;
 		font-weight: bold;
-		background-color: @green;
+		background-color: #bec0c0;
 
 		&:hover {
-			background-color:  lighten(@green, 3%) !important;
+			background-color:  lighten(#bec0c0, 3%) !important;
 		}
 	}
 
@@ -568,5 +617,14 @@ h2 {
 		border: 10px solid #1d343c;
 		margin: 0 -10px @space-base/2;
 		.border-radius(15px);
+
+		.btn-search {
+			color: @white;
+			background-color: @green;
+
+			&:hover {
+				background-color:  lighten(@green, 3%) !important;
+			}
+		}
 	}
 }

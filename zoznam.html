@@ -54,6 +54,7 @@
                             <li><a href="#">Zľavy</a></li>
                             <li class="visible-xs-block"><a href="#">Prihlásenie</a></li>
                             <li class="visible-xs-block"><a href="#">Registrácia</a></li>
+                            <li class="visible-xs-block"><a href="#">Pridať kurz</a></li>
                         </ul>
                     </div><!-- end of .navbar-collapse -->
                 </div>
@@ -81,7 +82,7 @@
                         </form>
                     </div><!-- end of .complex-search -->
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 hidden-xs">
                     <div class="subheader-right text-right">
                         10 376 kurzov, školení a seminárov
                         <a class="btn btn-primary margin-on-left" href="">Pridať kurz</a>
@@ -95,7 +96,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-9">
-                    <ul class="breadcrumbs">
+                    <ul class="breadcrumbs hidden-xs">
                         <li>
                             <a href="#">Hlavná stránka</a>
                         </li>
@@ -104,232 +105,245 @@
                         </li>
                     </ul><!-- end of .breadcrumbs -->
 
-                    <div class="panel-container">
+                    <div class="panel-container sync-height unsync-height">
                         <div class="row">
                             <div class="col-sm-4">
-                                <div class="sidebar-left">
-                                    <div class="sidebar-title bold">Vybrané kritéria</div>
-                                    <ul class="list-arrow sidebar-criteria">
-                                        <li><a href="#">Trnavský kraj</a></li>
-                                        <li><a href="#">Kurzy na mieru</a></li>
-                                    </ul>
-
-                                    <div class="sidebar-title">Podkategórie</div>
-                                    <ul class="sidebar-list">
-                                        <li>
-                                            <a href="#">
-                                                Financie
-                                                <span>452</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                IT a počítače
-                                                <span>515</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Jazyky
-                                                <span>124</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Ľudské zdroje a personalistika
-                                                <span>59</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="more" href="#">» Viac</a>
-                                        </li>
-                                    </ul>
-
-
-
-                                    <div class="sidebar-title">Podlokalita</div>
-                                    <ul class="sidebar-list">
-                                        <li>
-                                            <a href="#">
-                                                Trnava
-                                                <span>452</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Dunajská Streda
-                                                <span>515</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-
-
-
-                                    <div class="sidebar-title">Termín konania</div>
-                                    <form class="form-inline sidebar-doubleform">
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label for="terminKonaniaOd">Od</label>
-                                                    <input type="text" class="form-control input-sm" id="terminKonaniaOd">
-                                                </div>
+                                <div class="sidebar-left sync">
+                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingOne">
+                                                <h4 class="panel-title">
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Zobraziť filtre</a>
+                                                </h4>
                                             </div>
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label for="terminKonaniaDo">Do</label>
-                                                    <input type="text" class="form-control input-sm" id="terminKonaniaDo">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
+                                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                                <div class="panel-body">
+                                                    <div class="sidebar-title bold">Vybrané kritéria</div>
+                                                    <ul class="list-arrow sidebar-criteria">
+                                                        <li><a href="#">Trnavský kraj</a></li>
+                                                        <li><a href="#">Kurzy na mieru</a></li>
+                                                    </ul>
+
+                                                    <div class="sidebar-title">Podkategórie</div>
+                                                    <ul class="sidebar-list">
+                                                        <li>
+                                                            <a href="#">
+                                                                <span>452</span>
+                                                                Financie
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <span>515</span>
+                                                                IT a počítače
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <span>124</span>
+                                                                Jazyky
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <span>59</span>
+                                                                Ľudské zdroje a personalistika
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="more" href="#">» Viac</a>
+                                                        </li>
+                                                    </ul>
 
 
 
-                                    <div class="sidebar-title">Dĺžka kurzu</div>
-                                    <ul class="sidebar-list">
-                                        <li>
-                                            <a href="#">
-                                                1 deň
-                                                <span>452</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                2 až 7 dní
-                                                <span>515</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Viac ako týždeň
-                                                <span>22</span>
-                                            </a>
-                                        </li>
-                                    </ul>
+                                                    <div class="sidebar-title">Podlokalita</div>
+                                                    <ul class="sidebar-list">
+                                                        <li>
+                                                            <a href="#">
+                                                                <span>452</span>
+                                                                Trnava
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <span>515</span>
+                                                                Dunajská Streda
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+
+
+
+                                                    <div class="sidebar-title">Termín konania</div>
+                                                    <form class="form-inline sidebar-doubleform">
+                                                        <div class="row">
+                                                            <div class="col-lg-6">
+                                                                <div class="form-group">
+                                                                    <label for="terminKonaniaOd">Od</label>
+                                                                    <input type="text" class="form-control input-sm" id="terminKonaniaOd">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                <div class="form-group">
+                                                                    <label for="terminKonaniaDo">Do</label>
+                                                                    <input type="text" class="form-control input-sm" id="terminKonaniaDo">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+
+
+
+                                                    <div class="sidebar-title">Dĺžka kurzu</div>
+                                                    <ul class="sidebar-list">
+                                                        <li>
+                                                            <a href="#">
+                                                                <span>452</span>
+                                                                1 deň
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <span>515</span>
+                                                                2 až 7 dní
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <span>22</span>
+                                                                Viac ako týždeň
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div><!-- end of .panel-body -->
+                                            </div><!-- end of .panel-collapse -->
+                                        </div><!-- end of .panel -->
+                                    </div><!-- end of .panel-group -->
                                 </div><!-- end of .sidebar-left -->
                             </div><!-- end of .col-sm-4 -->
                             <div class="col-sm-8">
-                                <div class="panel-content">
+                                <div class="panel-content sync">
                                     <h1>Kurzy, školenia, semináre: <span>Trnavský kraj, Kurzy na mieru</span></h1>
 
 
                                     <ul class="offer-list">
                                         <li>
                                             <div class="row">
-                                                <div class="col-xs-10">
+                                                <div class="col-xs-8 col-sm-9 col-lg-10">
                                                     <h2><a href="#">Zákonník práce - aktuálne zmeny v r. 2015</a></h2>
                                                     <span class="bold block-xs">Poradca podnikateľa, spol. s r.o.,</span>
                                                     <span class="color-gray-dark">Žilina • 13.4.2015</span>
                                                 </div>
-                                                <div class="col-xs-2">
+                                                <div class="col-xs-4 col-md-3 col-lg-2">
                                                     <div class="offer-price">155€</div>
                                                 </div>
                                             </div><!-- end of .row -->
                                         </li>
                                         <li>
                                             <div class="row">
-                                                <div class="col-xs-10">
+                                                <div class="col-xs-8 col-sm-9 col-lg-10">
                                                     <h2><a href="#">Vedúci (externý) audítor OHSAS 18001:2007 - IRCA</a></h2>
                                                     <span class="bold block-xs">Poradca podnikateľa, spol. s r.o.,</span>
                                                     <span class="color-gray-dark">Žilina • 13.4.2015</span>
                                                 </div>
-                                                <div class="col-xs-2">
+                                                <div class="col-xs-4 col-md-3 col-lg-2">
                                                     <div class="offer-price">78€</div>
                                                 </div>
                                             </div><!-- end of .row -->
                                         </li>
                                         <li>
                                             <div class="row">
-                                                <div class="col-xs-10">
+                                                <div class="col-xs-8 col-sm-9 col-lg-10">
                                                     <h2><a href="#">ELEKTROTECHNIK - školenie a preškolenie praco...</a></h2>
                                                     <span class="bold block-xs">Poradca podnikateľa, spol. s r.o.,</span>
                                                     <span class="color-gray-dark">Žilina • 13.4.2015</span>
                                                 </div>
-                                                <div class="col-xs-2">
+                                                <div class="col-xs-4 col-md-3 col-lg-2">
                                                     <div class="offer-price">728€</div>
                                                 </div>
                                             </div><!-- end of .row -->
                                         </li>
                                         <li>
                                             <div class="row">
-                                                <div class="col-xs-10">
+                                                <div class="col-xs-8 col-sm-9 col-lg-10">
                                                     <h2><a href="#">LEKTOR - ANDRAGOGICKÉ MINIMUM PRE LEKTOROV VO VZDELÁVANÍ DOSPELÝCH, 100 hod.</a></h2>
                                                     <span class="bold block-xs">Poradca podnikateľa, spol. s r.o.,</span>
                                                     <span class="color-gray-dark">Žilina • 13.4.2015</span>
                                                 </div>
-                                                <div class="col-xs-2">
+                                                <div class="col-xs-4 col-md-3 col-lg-2">
                                                     <div class="offer-price">265€</div>
                                                 </div>
                                             </div><!-- end of .row -->
                                         </li>
                                         <li>
                                             <div class="row">
-                                                <div class="col-xs-10">
+                                                <div class="col-xs-8 col-sm-9 col-lg-10">
                                                     <h2><a href="#">Zákonník práce - aktuálne zmeny v r. 2015</a></h2>
                                                     <span class="bold block-xs">Poradca podnikateľa, spol. s r.o.,</span>
                                                     <span class="color-gray-dark">Žilina • 13.4.2015</span>
                                                 </div>
-                                                <div class="col-xs-2">
+                                                <div class="col-xs-4 col-md-3 col-lg-2">
                                                     <div class="offer-price">155€</div>
                                                 </div>
                                             </div><!-- end of .row -->
                                         </li>
                                         <li>
                                             <div class="row">
-                                                <div class="col-xs-10">
+                                                <div class="col-xs-8 col-sm-9 col-lg-10">
                                                     <h2><a href="#">Vedúci (externý) audítor OHSAS 18001:2007 - IRCA</a></h2>
                                                     <span class="bold block-xs">Poradca podnikateľa, spol. s r.o.,</span>
                                                     <span class="color-gray-dark">Žilina • 13.4.2015</span>
                                                 </div>
-                                                <div class="col-xs-2">
+                                                <div class="col-xs-4 col-md-3 col-lg-2">
                                                     <div class="offer-price">78€</div>
                                                 </div>
                                             </div><!-- end of .row -->
                                         </li>
                                         <li>
                                             <div class="row">
-                                                <div class="col-xs-10">
+                                                <div class="col-xs-8 col-sm-9 col-lg-10">
                                                     <h2><a href="#">ELEKTROTECHNIK - školenie a preškolenie praco...</a></h2>
                                                     <span class="bold block-xs">Poradca podnikateľa, spol. s r.o.,</span>
                                                     <span class="color-gray-dark">Žilina • 13.4.2015</span>
                                                 </div>
-                                                <div class="col-xs-2">
+                                                <div class="col-xs-4 col-md-3 col-lg-2">
                                                     <div class="offer-price">728€</div>
                                                 </div>
                                             </div><!-- end of .row -->
                                         </li>
                                         <li>
                                             <div class="row">
-                                                <div class="col-xs-10">
+                                                <div class="col-xs-8 col-sm-9 col-lg-10">
                                                     <h2><a href="#">LEKTOR - ANDRAGOGICKÉ MINIMUM PRE LEKTOROV VO VZDELÁVANÍ DOSPELÝCH, 100 hod.</a></h2>
                                                     <span class="bold block-xs">Poradca podnikateľa, spol. s r.o.,</span>
                                                     <span class="color-gray-dark">Žilina • 13.4.2015</span>
                                                 </div>
-                                                <div class="col-xs-2">
+                                                <div class="col-xs-4 col-md-3 col-lg-2">
                                                     <div class="offer-price">265€</div>
                                                 </div>
                                             </div><!-- end of .row -->
                                         </li>
                                         <li>
                                             <div class="row">
-                                                <div class="col-xs-10">
+                                                <div class="col-xs-8 col-sm-9 col-lg-10">
                                                     <h2><a href="#">Zákonník práce - aktuálne zmeny v r. 2015</a></h2>
                                                     <span class="bold block-xs">Poradca podnikateľa, spol. s r.o.,</span>
                                                     <span class="color-gray-dark">Žilina • 13.4.2015</span>
                                                 </div>
-                                                <div class="col-xs-2">
+                                                <div class="col-xs-4 col-md-3 col-lg-2">
                                                     <div class="offer-price">155€</div>
                                                 </div>
                                             </div><!-- end of .row -->
                                         </li>
                                         <li>
                                             <div class="row">
-                                                <div class="col-xs-10">
+                                                <div class="col-xs-8 col-sm-9 col-lg-10">
                                                     <h2><a href="#">Vedúci (externý) audítor OHSAS 18001:2007 - IRCA</a></h2>
                                                     <span class="bold block-xs">Poradca podnikateľa, spol. s r.o.,</span>
                                                     <span class="color-gray-dark">Žilina • 13.4.2015</span>
                                                 </div>
-                                                <div class="col-xs-2">
+                                                <div class="col-xs-4 col-md-3 col-lg-2">
                                                     <div class="offer-price">78€</div>
                                                 </div>
                                             </div><!-- end of .row -->
@@ -450,6 +464,26 @@
                         </div><!-- end of .sidebar-item -->
 
                         <div class="sidebar-item">
+                            <div class="sidebar-title">Novopridané vzdelávačky</div>
+                            <div class="sidebar-content">
+                                <ul class="sidebar-list">
+                                    <li>
+                                        <a href="#">MV Akadémia - manažérska vzdelávacia akadémia <span class="color-gray-dark">Žilina</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">EuroTREND 21 <span class="color-gray-dark">Bratislava</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">DNV GL Business Assurance Slovakia s.r.o.  <span class="color-gray-dark">Bratislava</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">MV Akadémia - manažérska vzdelávacia akadémia <span class="color-gray-dark">Žilina</span></a>
+                                    </li>
+                                </ul><!-- end of .sidebar-list -->
+                            </div><!-- end of .sidebar-content -->
+                        </div><!-- end of .sidebar-item -->
+
+                        <div class="sidebar-item">
                             <img src="http://dummyimage.com/263x263/ccc/222" alt="" title="">
                         </div><!-- end of .sidebar-item -->
                     </div><!-- end of .sidebar-rigt -->
@@ -464,9 +498,21 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/jquery.syncHeight.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
     <script>
+        $(window).load(function(){
+            $('.sync-height').each(function() {
+                $(this).find('.sync').syncHeight({ 'updateOnResize': true});
+            });
+            if($(window).width() < 768){
+                $('.sync-height').each(function() {
+                    $(this).find('.sync').unSyncHeight();
+                });
+            }
+        });
+
         $( document ).ready(function() {
             // $('.carousel').carousel();
         });
