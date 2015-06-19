@@ -381,6 +381,66 @@ ol.reset li {
   background-color: #a9a9a9;
 }
 /* -----------------------------------------
+   Sidebar - navbar
+----------------------------------------- */
+.navbar-left {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  float: none !important;
+}
+.navbar-left > li {
+  padding: 0 15px 0 0;
+  margin: 0 15px !important;
+  background: url("../images/design/li_gray.png") no-repeat 100% 13px;
+  border-top: 1px solid #d8dbdc;
+}
+.navbar-left > li a {
+  color: #73787d;
+  padding: 10px 0;
+  display: block;
+}
+.navbar-left > li.active {
+  padding-right: 15px;
+  margin: 0 !important;
+  background: url("../images/design/li_open.png") #fbfbfb no-repeat 93% 13px;
+}
+.navbar-left > li.active > a {
+  padding-left: 12px;
+  border-left: 3px solid #0061a1;
+}
+.navbar-left-sub,
+.navbar-left-sub ul,
+.navbar-left-sub li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  overflow: auto;
+}
+.navbar-left-sub,
+.navbar-left-sub ul {
+  margin-left: 12px;
+}
+.navbar-left-sub a {
+  color: #1582d8 !important;
+  padding: 5px 0 5px 15px !important;
+}
+.navbar-left-sub .active a {
+  font-weight: bold;
+}
+.navbar-left-sub .has-sub {
+  background: url("../images/design/li_full.png") no-repeat 3px 9px;
+}
+.navbar-left-sub .has-sub > a {
+  color: #73787d !important;
+}
+.navbar-left-sub .has-sub.open {
+  background: url("../images/design/li_full_open.png") no-repeat 0 10px;
+}
+.navbar-left-sub .has-sub.open > a {
+  font-weight: bold;
+}
+/* -----------------------------------------
    Subheader
 ----------------------------------------- */
 .subheader {
@@ -461,6 +521,9 @@ ol.reset li {
   padding: 15px;
   background-color: #f1f1f1;
   border-right: 1px solid #d8dbdc;
+}
+.detail .sidebar-left {
+  padding: 0;
 }
 .sidebar-left li {
   margin-bottom: 5px;
@@ -590,17 +653,23 @@ h2 {
 .detail-header {
   padding: 15px;
   background-color: #f1f1f1;
+  overflow: hidden;
 }
 .detail-header .profile-title {
   color: #73787d;
   font-family: 'Roboto Slab', Helvetica, Arial, sans-serif;
   font-size: 21px;
-  margin-bottom: 5px;
+  margin: 15px 0 5px;
 }
 .detail-header .profile-place {
   color: #a9a9a9;
   font-family: 'Roboto Slab', Helvetica, Arial, sans-serif;
   font-size: 17px;
+}
+.detail-header .profile-logo {
+  padding: 10px 15px;
+  background-color: #ffffff;
+  border: 1px solid #d8dbdc;
 }
 /* -----------------------------------------
    Search

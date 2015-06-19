@@ -313,6 +313,84 @@ ul, ol {
 
 
 
+
+
+/* -----------------------------------------
+   Sidebar - navbar
+----------------------------------------- */
+.navbar-left {
+	.list-reset();
+	float: none !important;
+
+	&>li {
+		padding: 0 15px 0 0;
+		margin: 0 @space-base !important;
+		background: url("../images/design/li_gray.png") no-repeat 100% 13px;
+		border-top: 1px solid @gray-light;
+
+		a {
+			color: @gray-darker;
+			padding: 10px 0;
+			display: block;
+		}
+
+		&.active {
+			padding-right: 15px;
+			margin: 0 !important;
+			background: url("../images/design/li_open.png") #fbfbfb no-repeat 93% 13px;
+
+			&>a {
+				padding-left: 12px;
+				border-left: 3px solid @blue;
+			}
+		}
+	}
+
+	&-sub {
+		&, ul, li {
+			.list-reset();
+			overflow: auto;
+		}
+
+		&, ul {
+			margin-left: 12px;
+		}
+
+		a {
+			color: @link-color !important;
+			padding: 5px 0 5px 15px !important;
+		}
+
+		.active {
+			a {
+				font-weight: bold;
+			}
+		}
+
+		.has-sub {
+			background: url("../images/design/li_full.png") no-repeat 3px 9px;
+
+			&>a {
+				color: @gray-darker !important;
+			}
+
+			&.open {
+				background: url("../images/design/li_full_open.png") no-repeat 0 10px;
+
+				&>a {
+					.bold();
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
 /* -----------------------------------------
    Subheader
 ----------------------------------------- */
@@ -420,6 +498,10 @@ ul, ol {
 	padding: @space-base;
 	background-color: @gray-lighter;
 	border-right: 1px solid @gray-light;
+
+	.detail & {
+		padding: 0;
+	}
 
 	li {
 		margin-bottom: 5px;
@@ -592,18 +674,25 @@ h2 {
 .detail-header {
 	padding: @space-base;
 	background-color: @gray-lighter;
+	overflow: hidden;
 
 	.profile-title {
 		color: @gray-darker;
 		font-family: @header-font;
 		font-size: @font-size-h4;
-		margin-bottom: 5px;
+		margin: @space-base 0 5px;
 	}
 
 	.profile-place {
 		color: @gray;
 		font-family: @header-font;
 		font-size: @font-size-large;
+	}
+
+	.profile-logo {
+		padding: 10px @space-base;
+		background-color: @white;
+		border: 1px solid @gray-light;
 	}
 }
 
