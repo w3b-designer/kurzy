@@ -585,6 +585,24 @@ h2 {
   margin-bottom: 30px;
 }
 /* -----------------------------------------
+   Detail
+----------------------------------------- */
+.detail-header {
+  padding: 15px;
+  background-color: #f1f1f1;
+}
+.detail-header .profile-title {
+  color: #73787d;
+  font-family: 'Roboto Slab', Helvetica, Arial, sans-serif;
+  font-size: 21px;
+  margin-bottom: 5px;
+}
+.detail-header .profile-place {
+  color: #a9a9a9;
+  font-family: 'Roboto Slab', Helvetica, Arial, sans-serif;
+  font-size: 17px;
+}
+/* -----------------------------------------
    Search
 ----------------------------------------- */
 .complex-search {
