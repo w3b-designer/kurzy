@@ -234,20 +234,20 @@ ol.reset li {
 }
 .btn-primary {
   color: #ffffff;
-  background-color: #1582d8;
-  border: 1px solid #1374c1;
+  background-color: #0061a1;
+  border: 1px solid #005288;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #168ae6 !important;
-  border: 1px solid #1374c1;
+  background-color: #006ab0 !important;
+  border: 1px solid #005288;
 }
 .btn-primary:active,
 .btn-primary.active,
 .btn-primary:focus,
 .btn-primary:visited {
-  background: #1582d8;
-  border: 1px solid #116cb3 !important;
+  background: #0061a1;
+  border: 1px solid #004878 !important;
   -webkit-box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.5);
   -khtml-box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.5);
   -moz-box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.5);
@@ -403,7 +403,7 @@ ol.reset li {
 .navbar-left > li.active {
   padding-right: 15px;
   margin: 0 !important;
-  background: url("../images/design/li_open.png") #fbfbfb no-repeat 93% 13px;
+  background: url("../images/design/li_open.png") #fbfbfb no-repeat 95% 13px;
 }
 .navbar-left > li.active > a {
   padding-left: 12px;
@@ -423,7 +423,10 @@ ol.reset li {
 }
 .navbar-left-sub a {
   color: #1582d8 !important;
-  padding: 5px 0 5px 15px !important;
+  padding: 5px 0 5px 2px !important;
+}
+.navbar-left-sub a span {
+  float: right;
 }
 .navbar-left-sub .active a {
   font-weight: bold;
@@ -433,6 +436,7 @@ ol.reset li {
 }
 .navbar-left-sub .has-sub > a {
   color: #73787d !important;
+  padding-left: 15px !important;
 }
 .navbar-left-sub .has-sub.open {
   background: url("../images/design/li_full_open.png") no-repeat 0 10px;
@@ -670,6 +674,26 @@ h2 {
   padding: 10px 15px;
   background-color: #ffffff;
   border: 1px solid #d8dbdc;
+}
+.detail h1 {
+  font-size: 28px;
+  margin-top: 15px;
+}
+.detail-title {
+  font-size: 21px;
+  font-weight: bold;
+  font-family: 'Roboto Slab', Helvetica, Arial, sans-serif;
+  margin-bottom: 15px;
+}
+.detail-subtitle {
+  font-size: 17px;
+  font-weight: bold;
+  font-family: 'Roboto Slab', Helvetica, Arial, sans-serif;
+}
+.detail-divider {
+  height: 1px;
+  margin: 30px 0;
+  background-color: #d8dbdc;
 }
 /* -----------------------------------------
    Search
