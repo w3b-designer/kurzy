@@ -43,12 +43,21 @@
     }
 
 
+    /* -----------------------------------------
+       Subheader
+    ----------------------------------------- */
+    .subheader {
+    	margin-bottom: 0;
+    }
+
+
+
 
     /* -----------------------------------------
        Content
     ----------------------------------------- */
     .panel-content {
-    	padding: 0 2*@space-base 0 0;
+    	padding: 0 2*@space-base 3*@space-base 0;
     }
 
 
@@ -87,18 +96,61 @@
     .premium-course-price {
     	text-align: right;
     }
+
+
+    /* -----------------------------------------
+       Detail
+    ----------------------------------------- */
+    .detail {
+    	&-header {
+            .profile-title {
+                margin: 0 0 5px;
+    		}
+
+    		.profile-logo {
+    			margin-top: 0;
+
+    			img {
+    				width: auto;
+    				padding: 10px @space-base;
+    			}
+    		}
+    	}
+    }
 }
 
 
 // md - min-width: 992px
 // desktop
 @media (min-width: @screen-md-min) {
-
+    /* -----------------------------------------
+       Detail
+    ----------------------------------------- */
+    .detail {
+        &-header {
+            .profile-title {
+                margin: 5px 0;
+            }
+        }
+    }
 }
 
 
 // lg - min-width: 1200px
 // wide desktop
 @media (min-width: @screen-lg-min) {
+    /* -----------------------------------------
+       Detail
+    ----------------------------------------- */
+    .detail {
+        &-header {
+            .profile-title {
+                margin: 10px 0 5px;
+            }
+        }
 
+        h1 {
+    		font-size: @font-size-h2;
+    	}
+    }
 }

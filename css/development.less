@@ -127,7 +127,7 @@ ul, ol {
 
 		&:hover {
 			color: #fff;
-			background-color:  lighten(@blue, 3%) !important;
+			background-color:  lighten(@blue, 5%) !important;
 			border: 1px solid darken(@blue, 5%);
 
 		}
@@ -145,6 +145,26 @@ ul, ol {
 	 	// Button with icon
 		svg.icon {
 			fill: @white;
+		}
+	}
+
+	&-secondary {
+		color: @gray;
+		background-color: @gray-lighter;
+		border: 1px solid darken(@gray-lighter, 5%);
+
+		&:hover {
+			color: @gray;
+			background-color:  lighten(@gray-lighter, 3%) !important;
+			border: 1px solid darken(@gray-lighter, 5%);
+
+		}
+
+		&:focus, &:visited {
+			color: @gray;
+			background: @gray-lighter;
+		    border: 1px solid darken(@gray-lighter, 8%) !important;
+		  	.inner-shadow-white();
 		}
 	}
 }
@@ -322,7 +342,7 @@ ul, ol {
 	.list-reset();
 	float: none !important;
 
-	&>li {
+	& > li {
 		padding: 0 15px 0 0;
 		margin: 0 @space-base !important;
 		background: url("../images/design/li_gray.png") no-repeat 100% 13px;
@@ -339,10 +359,14 @@ ul, ol {
 			margin: 0 !important;
 			background: url("../images/design/li_open.png") #fbfbfb no-repeat 95% 13px;
 
-			&>a {
+			& > a {
 				padding-left: 12px;
 				border-left: 3px solid @blue;
 			}
+		}
+
+		&:first-child {
+			border-top: none;
 		}
 	}
 
@@ -374,7 +398,7 @@ ul, ol {
 		.has-sub {
 			background: url("../images/design/li_full.png") no-repeat 3px 9px;
 
-			&>a {
+			& > a {
 				color: @gray-darker !important;
 				padding-left: 15px !important;
 			}
@@ -382,7 +406,8 @@ ul, ol {
 			&.open {
 				background: url("../images/design/li_full_open.png") no-repeat 0 10px;
 
-				&>a {
+				& > a {
+					color: @text-color !important;
 					.bold();
 				}
 			}
@@ -402,7 +427,9 @@ ul, ol {
 .subheader {
 	color: @gray-dark;
 	padding: @space-base 0;
+	margin-bottom: 2*@space-base;
 	background-color: #eaeaea;
+	.box-shadow();
 
 	&-right {
 		padding-top: 7px;
@@ -452,6 +479,10 @@ ul, ol {
 			}
 		}
 	}
+
+	a:visited, a:focus {
+		color: @link-color;
+	}
 }
 
 
@@ -460,7 +491,7 @@ ul, ol {
    Content
 ----------------------------------------- */
 .panel-content {
-	padding: 0 @space-base;
+	padding: 0 @space-base 1*@space-base;
 	overflow: hidden;
 }
 
@@ -568,6 +599,10 @@ ul, ol {
 
 			&.more {
 				display: inline;
+			}
+
+			&:visited, &:focus {
+				color: @link-color;
 			}
 		}
 
@@ -680,13 +715,15 @@ h2 {
 	&-header {
 		padding: @space-base;
 		background-color: @gray-lighter;
+		border-bottom: 1px solid @gray-light;
 		overflow: hidden;
 
 		.profile-title {
-			color: @gray-darker;
+			color: @text-color;
 			font-family: @header-font;
 			font-size: @font-size-h4;
-			margin: @space-base 0 5px;
+			line-height: 110%;
+			margin: 0 0 5px;
 		}
 
 		.profile-place {
@@ -696,14 +733,20 @@ h2 {
 		}
 
 		.profile-logo {
-			padding: 10px @space-base;
-			background-color: @white;
-			border: 1px solid @gray-light;
+			margin-top: @space-base;
+
+			img {
+				width: 120px;
+				padding: 5px;
+				background-color: @white;
+				border: 1px solid @gray-light;
+			}
 		}
 	}
 
 	h1 {
-		font-size: @font-size-h2;
+		font-size: @font-size-h3;
+		line-height: 120%;
 		margin-top: @space-base;
 	}
 
@@ -724,6 +767,15 @@ h2 {
 		height: 1px;
 		margin: 2*@space-base 0;
 		background-color: @gray-light;
+	}
+
+	&-desc-list {
+		.list-reset();
+		margin: @space-base 0;
+
+		li {
+			margin: 5px 0;
+		}
 	}
 }
 

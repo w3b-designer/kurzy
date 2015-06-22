@@ -130,10 +130,16 @@
     border: none;
   }
   /* -----------------------------------------
+       Subheader
+    ----------------------------------------- */
+  .subheader {
+    margin-bottom: 0;
+  }
+  /* -----------------------------------------
        Content
     ----------------------------------------- */
   .panel-content {
-    padding: 0 30px 0 0;
+    padding: 0 30px 45px 0;
   }
   /* -----------------------------------------
        Sidebars
@@ -159,5 +165,37 @@
     ----------------------------------------- */
   .premium-course-price {
     text-align: right;
+  }
+  /* -----------------------------------------
+       Detail
+    ----------------------------------------- */
+  .detail-header .profile-title {
+    margin: 0 0 5px;
+  }
+  .detail-header .profile-logo {
+    margin-top: 0;
+  }
+  .detail-header .profile-logo img {
+    width: auto;
+    padding: 10px 15px;
+  }
+}
+@media (min-width: 992px) {
+  /* -----------------------------------------
+       Detail
+    ----------------------------------------- */
+  .detail-header .profile-title {
+    margin: 5px 0;
+  }
+}
+@media (min-width: 1200px) {
+  /* -----------------------------------------
+       Detail
+    ----------------------------------------- */
+  .detail-header .profile-title {
+    margin: 10px 0 5px;
+  }
+  .detail h1 {
+    font-size: 28px;
   }
 }

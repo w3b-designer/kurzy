@@ -239,7 +239,7 @@ ol.reset li {
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #006ab0 !important;
+  background-color: #0070bb !important;
   border: 1px solid #005288;
 }
 .btn-primary:active,
@@ -258,6 +258,26 @@ ol.reset li {
 }
 .btn-primary svg.icon {
   fill: #ffffff;
+}
+.btn-secondary {
+  color: #a9a9a9;
+  background-color: #f1f1f1;
+  border: 1px solid #e4e4e4;
+}
+.btn-secondary:hover {
+  color: #a9a9a9;
+  background-color: #f9f9f9 !important;
+  border: 1px solid #e4e4e4;
+}
+.btn-secondary:focus,
+.btn-secondary:visited {
+  color: #a9a9a9;
+  background: #f1f1f1;
+  border: 1px solid #dddddd !important;
+  -webkit-box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.5);
+  -khtml-box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.5);
+  -moz-box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.5);
 }
 /* -----------------------------------------
 	Carousel
@@ -409,6 +429,9 @@ ol.reset li {
   padding-left: 12px;
   border-left: 3px solid #0061a1;
 }
+.navbar-left > li:first-child {
+  border-top: none;
+}
 .navbar-left-sub,
 .navbar-left-sub ul,
 .navbar-left-sub li {
@@ -442,6 +465,7 @@ ol.reset li {
   background: url("../images/design/li_full_open.png") no-repeat 0 10px;
 }
 .navbar-left-sub .has-sub.open > a {
+  color: #444444 !important;
   font-weight: bold;
 }
 /* -----------------------------------------
@@ -450,7 +474,13 @@ ol.reset li {
 .subheader {
   color: #8e8e8e;
   padding: 15px 0;
+  margin-bottom: 30px;
   background-color: #eaeaea;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 3px;
+  -khtml-box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 3px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 3px;
+  box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 3px;
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color=#8e8e8e);
 }
 .subheader-right {
   padding-top: 7px;
@@ -490,11 +520,15 @@ ol.reset li {
 .breadcrumbs li:last-child::after {
   content: "";
 }
+.breadcrumbs a:visited,
+.breadcrumbs a:focus {
+  color: #1582d8;
+}
 /* -----------------------------------------
    Content
 ----------------------------------------- */
 .panel-content {
-  padding: 0 15px;
+  padding: 0 15px 15px;
   overflow: hidden;
 }
 /* -----------------------------------------
@@ -579,6 +613,10 @@ ol.reset li {
 .sidebar-left .sidebar-list a.more {
   display: inline;
 }
+.sidebar-left .sidebar-list a:visited,
+.sidebar-left .sidebar-list a:focus {
+  color: #1582d8;
+}
 .sidebar-left .sidebar-list span {
   color: #a9a9a9;
   float: right;
@@ -657,13 +695,15 @@ h2 {
 .detail-header {
   padding: 15px;
   background-color: #f1f1f1;
+  border-bottom: 1px solid #d8dbdc;
   overflow: hidden;
 }
 .detail-header .profile-title {
-  color: #73787d;
+  color: #444444;
   font-family: 'Roboto Slab', Helvetica, Arial, sans-serif;
   font-size: 21px;
-  margin: 15px 0 5px;
+  line-height: 110%;
+  margin: 0 0 5px;
 }
 .detail-header .profile-place {
   color: #a9a9a9;
@@ -671,12 +711,17 @@ h2 {
   font-size: 17px;
 }
 .detail-header .profile-logo {
-  padding: 10px 15px;
+  margin-top: 15px;
+}
+.detail-header .profile-logo img {
+  width: 120px;
+  padding: 5px;
   background-color: #ffffff;
   border: 1px solid #d8dbdc;
 }
 .detail h1 {
-  font-size: 28px;
+  font-size: 24px;
+  line-height: 120%;
   margin-top: 15px;
 }
 .detail-title {
@@ -694,6 +739,15 @@ h2 {
   height: 1px;
   margin: 30px 0;
   background-color: #d8dbdc;
+}
+.detail-desc-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin: 15px 0;
+}
+.detail-desc-list li {
+  margin: 5px 0;
 }
 /* -----------------------------------------
    Search

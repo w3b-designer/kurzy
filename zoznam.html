@@ -98,7 +98,7 @@
                 <div class="col-sm-9">
                     <ul class="breadcrumbs hidden-xs">
                         <li>
-                            <a href="#">Hlavná stránka</a>
+                            <a href="index.html">Hlavná stránka</a>
                         </li>
                         <li>
                             Kurzy, školenia, semináre: Trnavský kraj, Kurzy na mieru
@@ -502,16 +502,23 @@
     <script src="js/bootstrap.min.js"></script>
 
     <script>
-        $(window).load(function(){
-            $('.sync-height').each(function() {
-                $(this).find('.sync').syncHeight({ 'updateOnResize': true});
-            });
+        var syncHeightFunc = function() {
             if($(window).width() < 768){
                 $('.sync-height').each(function() {
                     $(this).find('.sync').unSyncHeight();
                 });
+            } else {
+                $('.sync-height').each(function() {
+                    $(this).find('.sync').syncHeight();
+                });
             }
+        }
+
+        $(window).load(function(){
+            syncHeightFunc();
         });
+
+        $(window).resize(syncHeightFunc);
 
         $( document ).ready(function() {
             // $('.carousel').carousel();
