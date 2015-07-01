@@ -222,6 +222,9 @@ ol.reset li {
 .container {
   position: relative;
 }
+.block-xs {
+  display: block;
+}
 /* -----------------------------------------
    Buttons
 ----------------------------------------- */
@@ -378,7 +381,7 @@ ol.reset li {
   float: none;
   border-bottom: 1px solid #2b96ea;
 }
-.navbar-nav li:last-child {
+.navbar-nav li.no-border {
   border: none;
 }
 .navbar-right {
@@ -491,6 +494,9 @@ ol.reset li {
 /* -----------------------------------------
    Container
 ----------------------------------------- */
+.container-fluid > .container {
+  padding: 0;
+}
 .container-gray {
   background-color: #f1f1f1;
 }
@@ -530,9 +536,6 @@ ol.reset li {
 /* -----------------------------------------
    Content
 ----------------------------------------- */
-.content > .container {
-  padding: 0;
-}
 .panel-content {
   padding: 0 15px 15px;
   overflow: hidden;
@@ -647,6 +650,9 @@ ol.reset li {
 .sidebar-right .sidebar-item {
   padding: 15px 0;
 }
+.sidebar-right .sidebar-item:first-child {
+  padding-top: 0;
+}
 .sidebar-right .sidebar-white {
   background-color: #ffffff;
 }
@@ -693,11 +699,10 @@ h2 {
 }
 .offer-price {
   color: #8e8e8e;
-  font-size: 28px;
+  font-size: 21px;
   font-family: 'Roboto Slab', Helvetica, Arial, sans-serif;
   font-weight: bold;
-  text-align: right;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 .logo-list img {
   margin-bottom: 30px;

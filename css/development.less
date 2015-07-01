@@ -108,7 +108,9 @@ ul, ol {
 	.relative();
 }
 
-
+.block-xs {
+	display: block;
+}
 
 
 
@@ -300,7 +302,7 @@ ul, ol {
 			float: none;
 			border-bottom: 1px solid lighten(@primary-color, 8%);
 
-			&:last-child {
+			&.no-border {
 				border: none;
 			}
 		}
@@ -447,6 +449,10 @@ ul, ol {
 /* -----------------------------------------
    Container
 ----------------------------------------- */
+.container-fluid > .container {
+	padding: 0;
+}
+
 .container {
 	&-gray {
 		background-color: @gray-lighter;
@@ -494,10 +500,6 @@ ul, ol {
 /* -----------------------------------------
    Content
 ----------------------------------------- */
-.content > .container {
-	padding: 0;
-}
-
 .panel-content {
 	padding: 0 @space-base 1*@space-base;
 	overflow: hidden;
@@ -646,6 +648,10 @@ ul, ol {
 .sidebar-right {
 	.sidebar-item {
 		padding: @space-base 0;
+
+		&:first-child {
+			padding-top: 0;
+		}
 	}
 
 	.sidebar-white {
@@ -706,11 +712,10 @@ h2 {
 
 .offer-price {
 	color: @gray-dark;
-	font-size: @font-size-h2;
+	font-size: @font-size-h4;
 	font-family: @header-font;
 	font-weight: bold;
-	text-align: right;
-	padding-top: 10px;
+	padding-top: 5px;
 }
 
 .logo-list {

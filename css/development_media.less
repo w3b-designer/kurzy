@@ -6,9 +6,9 @@
     /* -----------------------------------------
        Content
     ----------------------------------------- */
-    .content > .container {
-    	padding: 0 15px;
-    }
+    // .content {
+    // 	margin: 0;
+    // }
 }
 
 
@@ -25,6 +25,9 @@
 // sm - min-width: 768px
 // tablet
 @media (min-width: @screen-sm-min) {
+    .block-xs {
+        display: inline;
+    }
 
 
     /* -----------------------------------------
@@ -64,6 +67,12 @@
     }
 
 
+    /* -----------------------------------------
+       Container
+    ----------------------------------------- */
+    .container-fluid > .container {
+    	padding: 0 15px;
+    }
 
 
     /* -----------------------------------------
@@ -111,6 +120,12 @@
     	text-align: right;
     }
 
+    .offer-price {
+    	font-size: @font-size-h2;
+    	text-align: right;
+    	padding-top: 0px;
+    }
+
 
     /* -----------------------------------------
        Detail
@@ -147,9 +162,17 @@
     .navbar {
     	&-brand {
     		img {
-    			height: auto;
+    			height: 36px;
     		}
     	}
+    }
+
+
+    /* -----------------------------------------
+       Homepage
+    ----------------------------------------- */
+    .offer-price {
+    	padding-top: 10px;
     }
 
 
