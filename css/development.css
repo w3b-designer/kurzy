@@ -690,6 +690,13 @@ ol.reset li {
 .hp-search a {
   color: #ffffff;
 }
+.hp-search .advanced-search {
+  margin-top: 60px;
+}
+.hp-search .advanced-search label {
+  color: #ffffff;
+  text-align: left !important;
+}
 h2 {
   color: #676461;
   font-size: 24px;
