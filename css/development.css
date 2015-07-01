@@ -355,7 +355,6 @@ ol.reset li {
 }
 .navbar a {
   color: #ffffff;
-  font-size: 17px;
   padding: 10px 20px  !important;
 }
 .navbar a:hover {
@@ -366,6 +365,10 @@ ol.reset li {
   height: auto;
   padding: 10px 15px;
   margin-left: -15px;
+}
+.navbar-brand img {
+  width: auto;
+  height: 30px;
 }
 .navbar-nav {
   margin: 8px auto 0;
@@ -394,7 +397,7 @@ ol.reset li {
   background-color: #ededed !important;
 }
 .navbar-toggle {
-  margin: 11px 0 0;
+  margin: 8px 0 0;
   background-color: #ffffff;
 }
 .navbar-toggle .icon-bar {
@@ -416,7 +419,7 @@ ol.reset li {
   border-top: 1px solid #d8dbdc;
 }
 .navbar-left > li a {
-  color: #73787d;
+  color: #676461;
   padding: 10px 0;
   display: block;
 }
@@ -458,7 +461,7 @@ ol.reset li {
   background: url("../images/design/li_full.png") no-repeat 3px 9px;
 }
 .navbar-left-sub .has-sub > a {
-  color: #73787d !important;
+  color: #676461 !important;
   padding-left: 15px !important;
 }
 .navbar-left-sub .has-sub.open {
@@ -510,7 +513,7 @@ ol.reset li {
   margin: 15px 0;
 }
 .breadcrumbs li {
-  color: #73787d;
+  color: #676461;
   float: left;
 }
 .breadcrumbs li::after {
@@ -527,6 +530,9 @@ ol.reset li {
 /* -----------------------------------------
    Content
 ----------------------------------------- */
+.content > .container {
+  padding: 0;
+}
 .panel-content {
   padding: 0 15px 15px;
   overflow: hidden;
@@ -558,7 +564,6 @@ ol.reset li {
 .sidebar-left {
   padding: 15px;
   background-color: #f1f1f1;
-  border-right: 1px solid #d8dbdc;
 }
 .detail .sidebar-left {
   padding: 0;
@@ -566,10 +571,18 @@ ol.reset li {
 .sidebar-left li {
   margin-bottom: 5px;
 }
+.sidebar-left .panel {
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #d8dbdc;
+}
 .sidebar-left .panel-heading {
   padding: 0;
 }
 .sidebar-left .panel-heading a {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  color: #1582d8;
   padding: 10px 15px;
   display: block;
 }
@@ -672,7 +685,7 @@ ol.reset li {
   color: #ffffff;
 }
 h2 {
-  color: #73787d;
+  color: #676461;
   font-size: 24px;
   font-weight: normal;
   font-family: 'Roboto Slab', Helvetica, Arial, sans-serif;
@@ -720,7 +733,7 @@ h2 {
   border: 1px solid #d8dbdc;
 }
 .detail h1 {
-  font-size: 24px;
+  font-size: 21px;
   line-height: 120%;
   margin-top: 15px;
 }
@@ -734,6 +747,7 @@ h2 {
   font-size: 17px;
   font-weight: bold;
   font-family: 'Roboto Slab', Helvetica, Arial, sans-serif;
+  margin-bottom: 10px;
 }
 .detail-divider {
   height: 1px;

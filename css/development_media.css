@@ -107,6 +107,14 @@
    Mixins
 ----------------------------------------- */
 /* GRADIENTS */
+@media (min-width: 450px) {
+  /* -----------------------------------------
+       Content
+    ----------------------------------------- */
+  .content > .container {
+    padding: 0 15px;
+  }
+}
 @media (min-width: 768px) {
   /* -----------------------------------------
        Lists
@@ -144,6 +152,9 @@
   /* -----------------------------------------
        Sidebars
     ----------------------------------------- */
+  .sidebar-left {
+    border-right: 1px solid #d8dbdc;
+  }
   .sidebar-left .panel {
     background: none;
     border: none;
@@ -179,8 +190,17 @@
     width: auto;
     padding: 10px 15px;
   }
+  .detail h1 {
+    font-size: 24px;
+  }
 }
 @media (min-width: 992px) {
+  /* -----------------------------------------
+       Header - navbar
+    ----------------------------------------- */
+  .navbar-brand img {
+    height: auto;
+  }
   /* -----------------------------------------
        Detail
     ----------------------------------------- */
