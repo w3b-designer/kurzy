@@ -16,7 +16,7 @@ body {
 html, body {
 	font-family: @primary-font;
     line-height: 140%;
-	background-color: #e4e4e4;
+	background-color: @gray-light;
 }
 
 body, div, dl, dt, dd, ul, ol, li, pre, form, p, blockquote, th, td {
@@ -434,8 +434,8 @@ ul, ol {
 	color: @gray-dark;
 	padding: @space-base 0;
 	margin-bottom: 2*@space-base;
-	background-color: #eaeaea;
-	.box-shadow();
+	background-color: @gray-lighter;
+	.box-shadow(0,0,3px, .2);
 
 	&-right {
 		padding-top: 7px;
@@ -462,7 +462,7 @@ ul, ol {
 .panel-container {
 	margin-bottom: 3*@space-base;
 	background-color: @white;
-	.box-shadow(0px, 0px, 5px, .15);
+	.box-shadow(0px, 0px, 4px, .15);
 }
 
 
@@ -524,9 +524,16 @@ ul, ol {
 		border-bottom: 1px solid @gray-light;
 	}
 
+	h1 {
+		span {
+			color: @gray;
+		}
+	}
+
 	h2 {
+		font-family: @primary-font;
 		font-size: @font-size-large;
-		margin: 0 0 5px;
+		margin: 0 0 3px;
 
 		a {
 			.bold();
@@ -721,8 +728,8 @@ h2 {
 
 .offer-price {
 	color: @gray-dark;
-	font-size: @font-size-h4;
-	font-family: @header-font;
+	font-size: @font-size-large;
+	font-family: @primary-font;
 	font-weight: bold;
 	padding-top: 5px;
 }
@@ -772,6 +779,7 @@ h2 {
 			}
 		}
 	}
+
 
 	h1 {
 		font-size: @font-size-h4;

@@ -22,7 +22,7 @@
   font-size: 17px;
 }
 .font-size-extra-large {
-  font-size: 28px;
+  font-size: 24px;
 }
 .color-gray-dark {
   color: #8e8e8e;
@@ -159,7 +159,7 @@
        Sidebars
     ----------------------------------------- */
   .sidebar-left {
-    border-right: 1px solid #d8dbdc;
+    border-right: 1px solid #dcdbd8;
   }
   .sidebar-left .panel {
     background: none;
@@ -184,7 +184,7 @@
     text-align: right;
   }
   .offer-price {
-    font-size: 28px;
+    font-size: 24px;
     text-align: right;
     padding-top: 0px;
   }
@@ -202,7 +202,7 @@
     padding: 10px 15px;
   }
   .detail h1 {
-    font-size: 24px;
+    font-size: 21px;
   }
 }
 @media (min-width: 992px) {
@@ -233,6 +233,6 @@
     margin: 10px 0 5px;
   }
   .detail h1 {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
