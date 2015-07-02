@@ -321,6 +321,16 @@ ol.reset li {
   bottom: -5px;
 }
 /* -----------------------------------------
+   Icons
+----------------------------------------- */
+.icon {
+  width: 16px;
+  height: auto;
+  margin-right: 5px;
+  position: relative;
+  top: -2px;
+}
+/* -----------------------------------------
    Lists
 ----------------------------------------- */
 .list-title {
@@ -499,6 +509,9 @@ ol.reset li {
 }
 .container-gray {
   background-color: #f1f1f1;
+}
+.container-white {
+  background-color: #ffffff;
 }
 .panel-container {
   margin-bottom: 45px;
