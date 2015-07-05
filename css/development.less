@@ -240,7 +240,38 @@ ul, ol {
 	height: auto;
 	margin-right: 5px;
 	position: relative;
-	top: -2px;
+	top: 2px;
+}
+
+.detail-icon {
+	width: 65px;
+	height: 65px;
+
+	svg {
+		width: 45px !important;
+		height: 45px !important;
+		margin: 10px 0 0 10px;
+
+		&, & * {
+			fill: @white !important;
+		}
+	}
+
+	&.green {
+		background-color: @green;
+	}
+
+	&.yellow {
+		background-color: @yellow;
+	}
+
+	&.orange {
+		background-color: @orange;
+	}
+
+	&.blue {
+		background-color: @blue;
+	}
 }
 
 
@@ -346,6 +377,19 @@ ul, ol {
 			background-color: @gray;
 		}
 	}
+
+	&-search {
+		padding: 6px 10px 5px;
+		margin-left: 10px;
+
+		.icon {
+			margin: 0 2px;
+
+			&, & * {
+				fill: @gray;
+			}
+		}
+	}
 }
 
 
@@ -447,6 +491,9 @@ ul, ol {
 	margin-bottom: 2*@space-base;
 	background-color: @gray-lighter;
 	.box-shadow(0,0,3px, .2);
+
+	display: none;
+	visibility: hidden;
 
 	&-right {
 		padding-top: 7px;
@@ -724,7 +771,7 @@ ul, ol {
 
 	.advanced-search {
 		margin-top: 4*@space-base;
-		
+
 		label {
 			color: @white;
 			text-align: left !important;
@@ -852,6 +899,15 @@ h2 {
 			height: 46px;
 			box-shadow: none;
 		}
+
+		.icon {
+			width: 24px;
+			height: 24px;
+
+			&, & * {
+				fill: #000;
+			}
+		}
 	}
 
 	.btn-search {
@@ -861,6 +917,12 @@ h2 {
 
 		&:hover {
 			background-color:  lighten(#bec0c0, 3%) !important;
+		}
+
+		.icon {
+			&, & * {
+				fill: #fff;
+			}
 		}
 	}
 

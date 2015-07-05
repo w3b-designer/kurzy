@@ -328,7 +328,32 @@ ol.reset li {
   height: auto;
   margin-right: 5px;
   position: relative;
-  top: -2px;
+  top: 2px;
+}
+.detail-icon {
+  width: 65px;
+  height: 65px;
+}
+.detail-icon svg {
+  width: 45px !important;
+  height: 45px !important;
+  margin: 10px 0 0 10px;
+}
+.detail-icon svg,
+.detail-icon svg * {
+  fill: #ffffff !important;
+}
+.detail-icon.green {
+  background-color: #00a15b;
+}
+.detail-icon.yellow {
+  background-color: #e7c216;
+}
+.detail-icon.orange {
+  background-color: #e77d16;
+}
+.detail-icon.blue {
+  background-color: #0061a1;
 }
 /* -----------------------------------------
    Lists
@@ -416,6 +441,17 @@ ol.reset li {
 .navbar-toggle .icon-bar {
   background-color: #a9a9a9;
 }
+.navbar-search {
+  padding: 6px 10px 5px;
+  margin-left: 10px;
+}
+.navbar-search .icon {
+  margin: 0 2px;
+}
+.navbar-search .icon,
+.navbar-search .icon * {
+  fill: #a9a9a9;
+}
 /* -----------------------------------------
    Sidebar - navbar
 ----------------------------------------- */
@@ -497,6 +533,8 @@ ol.reset li {
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 0 3px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 3px;
   filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color=#8e8e8e);
+  display: none;
+  visibility: hidden;
 }
 .subheader-right {
   padding-top: 7px;
@@ -808,6 +846,14 @@ h2 {
   height: 46px;
   box-shadow: none;
 }
+.complex-search .btn-group .icon {
+  width: 24px;
+  height: 24px;
+}
+.complex-search .btn-group .icon,
+.complex-search .btn-group .icon * {
+  fill: #000;
+}
 .complex-search .btn-search {
   color: #444444;
   font-weight: bold;
@@ -815,6 +861,10 @@ h2 {
 }
 .complex-search .btn-search:hover {
   background-color: #c6c8c8 !important;
+}
+.complex-search .btn-search .icon,
+.complex-search .btn-search .icon * {
+  fill: #fff;
 }
 .homepage .complex-search {
   border: 10px solid #1d343c;

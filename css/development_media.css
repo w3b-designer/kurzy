@@ -107,11 +107,6 @@
    Mixins
 ----------------------------------------- */
 /* GRADIENTS */
-@media (min-width: 450px) {
-  /* -----------------------------------------
-       Content
-    ----------------------------------------- */
-}
 @media (min-width: 768px) {
   .block-xs {
     display: inline;
@@ -142,6 +137,8 @@
     ----------------------------------------- */
   .subheader {
     margin-bottom: 0;
+    display: block;
+    visibility: visible;
   }
   /* -----------------------------------------
        Container
