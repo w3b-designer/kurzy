@@ -79,10 +79,39 @@
                         <form>
                             <input type="text" class="form-control input-lg" placeholder="Zadajte hľadaný výraz">
                             <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-default btn-lg">
-                                    <span class="hidden-xs">Všetky lokality</span>
-                                    <span class="visible-xs-block"><svg class="icon" viewBox="0 0 32 32"><use xlink:href="#icon-location"/></svg></span>
-                                </button>
+                                <select class="form-control input-lg" name="">
+                                    <option value="">Všetky lokality</option>
+                                    <optgroup label="Bratislavský kraj">
+                                        <option value="101">Bratislava</option>
+                                        <option value="106">Malacky</option>
+                                        <option value="107">Pezinok</option>
+                                        <option value="108">Senec</option>
+                                    </optgroup>
+                                    <optgroup label="Banskobystrický kraj">
+                                        <option value="201">Banská Bystrica</option>
+                                        <option value="202">Banská Štiavnica</option>
+                                        <option value="203">Brezno</option>
+                                        <option value="204">Detva</option>
+                                        <option value="205">Krupina</option>
+                                        <option value="206">Lučenec</option>
+                                        <option value="207">Poltár</option>
+                                        <option value="208">Revúca</option>
+                                        <option value="209">Rimavská Sobota</option>
+                                        <option value="210">Veľký Krtíš</option>
+                                        <option value="211">Zvolen</option>
+                                        <option value="212">Žarnovica</option>
+                                        <option value="213">Žiar nad Hronom</option>
+                                    </optgroup>
+                                    <optgroup label="Košický kraj">
+                                        <option value="801">Gelnica</option>
+                                        <option value="802">Košice</option>
+                                        <option value="807">Michalovce</option>
+                                        <option value="808">Rožňava</option>
+                                        <option value="809">Sobrance</option>
+                                        <option value="810">Spišská Nová Ves</option>
+                                        <option value="811">Trebišov</option>
+                                    </optgroup>
+                                </select>
                                 <button type="button" class="btn btn-search btn-lg">
                                     <span class="hidden-xs">Hľadať</span>
                                     <span class="visible-xs-block"><svg class="icon" viewBox="0 0 32 32"><use xlink:href="#icon-search"/></svg></span>

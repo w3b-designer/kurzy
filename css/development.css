@@ -388,21 +388,27 @@ ol.reset li {
   -moz-border-radius: 0px;
   border-radius: 0px;
 }
-.navbar-collapse {
-  padding: 0 0 10px;
-}
 .navbar a {
   color: #ffffff;
-  padding: 10px 20px  !important;
+  padding: 10px 0px !important;
 }
 .navbar a:hover {
   text-decoration: underline !important;
   background: none !important;
 }
+.navbar-collapse {
+  padding: 0 0 10px;
+}
+.navbar-collapse a {
+  padding: 10px 0px !important;
+}
+.navbar .navbar-right a {
+  padding: 5px 20px !important;
+}
 .navbar-brand {
   height: auto;
   padding: 10px 15px;
-  margin-left: -15px;
+  margin-left: 0 !important;
 }
 .navbar-brand img {
   width: auto;
@@ -414,7 +420,6 @@ ol.reset li {
 }
 .navbar-nav li {
   float: none;
-  border-bottom: 1px solid #2b96ea;
 }
 .navbar-nav li.no-border {
   border: none;
@@ -835,6 +840,11 @@ h2 {
 ----------------------------------------- */
 .complex-search {
   position: relative;
+}
+.complex-search select {
+  width: auto;
+  border-radius: 0 !important;
+  float: left;
 }
 .complex-search .btn-group {
   position: absolute;
