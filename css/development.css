@@ -331,14 +331,15 @@ ol.reset li {
   top: 2px;
 }
 .detail-icon {
-  width: 65px;
-  height: 65px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
+  float: right;
 }
 .detail-icon svg {
-  width: 36px !important;
-  height: 36px !important;
-  margin: 15px 0 0 15px;
+  width: 26px !important;
+  height: 26px !important;
+  margin: 9px 0 0 9px;
   opacity: 0.8;
 }
 .detail-icon svg,
